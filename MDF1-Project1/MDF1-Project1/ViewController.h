@@ -15,6 +15,7 @@
     IBOutlet UILabel *topLabelText;
     IBOutlet UITableView *mytableView;
     NSMutableArray  *stringArray;
+    NSArray *views;
     
     // variable for my top label
     DataPlannerView * myTitle;    

@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 #import "DataPlannerView.h"
-
+#import "CustomTableCell.h"
 @interface ViewController ()
 
 @end
@@ -79,18 +79,35 @@
 // This function will allow me to feed every table row one at a time
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    
+
     static NSString *CellIdentifier = @"Cell";
     
     UITableViewCell *cell = [mytableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil)
     {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+        //cell = [[CustomTableCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+        
+        views = [[NSBundle mainBundle] loadNibNamed:@"CustomCellView" owner:nil options:nil];
+                                                              
+        for (UIView *view in views)
+        {
+            
+            if ([view isKindOfClass:[CustomTableCell class]])
+            {
+                cell = (CustomTableCell*)view;
+                cell.textLabel.text = [stringArray objectAtIndex:indexPath.row];
+            }
+        }
     }
     
+    //cell.textLabel.text = (NSString*)[stringArray objectAtIndex:indexPath.row];
+    
+    return cell;
+
+    
     // these four lines of open code will create grouped sections
-    //NSInteger actualRow = 0;
-    //actualRow = (indexPath.section * 5) + indexPath.row;
+    NSInteger actualRow = 0;
+    actualRow = (indexPath.section * 5) + indexPath.row;
     if (indexPath.section == 0)
      {
      cell.textLabel.text = (NSString*)[stringArray objectAtIndex:indexPath.row];
@@ -100,10 +117,10 @@
      cell.textLabel.text = (NSString*)[stringArray objectAtIndex:indexPath.row];
      }
     static int count = 0; //I have to keep these lines for my project if I choose to use it
-    //cell.textLabel.text = (NSString*)[stringArray objectAtIndex:actualRow];
+    cell.textLabel.text = (NSString*)[stringArray objectAtIndex:actualRow];
     // I will need that code at the bottom for my project indexPath
     cell.textLabel.text = (NSString*)[stringArray objectAtIndex:indexPath.row];
-    
+   
     count++; //I will need this for my project
     return cell;
     
