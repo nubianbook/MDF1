@@ -13,7 +13,7 @@
 -(NSString*)getInfo
 {
     // This is the return string info that will be placed in the top label file
-    return @"Data Planner";
+    return @"Books of the Bible";
 }
 
 @end

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EA08619616C2B0E1000EF857 /* CustomCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA08619516C2B0E1000EF857 /* CustomCellView.xib */; };
 		EAA920EC16C06258002F5CC2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAA920EB16C06258002F5CC2 /* UIKit.framework */; };
 		EAA920EE16C06258002F5CC2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAA920ED16C06258002F5CC2 /* Foundation.framework */; };
 		EAA920F016C06258002F5CC2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAA920EF16C06258002F5CC2 /* CoreGraphics.framework */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EA08619516C2B0E1000EF857 /* CustomCellView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomCellView.xib; sourceTree = "<group>"; };
 		EAA920E716C06258002F5CC2 /* MDF1-Project1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MDF1-Project1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAA920EB16C06258002F5CC2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		EAA920ED16C06258002F5CC2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -97,6 +99,7 @@
 				EAA920F216C06258002F5CC2 /* Supporting Files */,
 				EAA9211916C06547002F5CC2 /* DataPlannerView.h */,
 				EAA9211A16C06547002F5CC2 /* DataPlannerView.m */,
+				EA08619516C2B0E1000EF857 /* CustomCellView.xib */,
 			);
 			path = "MDF1-Project1";
 			sourceTree = "<group>";
@@ -172,6 +175,7 @@
 				EAA9210216C06258002F5CC2 /* Default-568h@2x.png in Resources */,
 				EAA9210816C06258002F5CC2 /* ViewController_iPhone.xib in Resources */,
 				EAA9210B16C06258002F5CC2 /* ViewController_iPad.xib in Resources */,
+				EA08619616C2B0E1000EF857 /* CustomCellView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,6 +314,7 @@
 				EAA9211016C06258002F5CC2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

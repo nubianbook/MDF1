@@ -10,12 +10,16 @@
 @class DataPlannerView;
 
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <UITableViewDelegate>
 {
     IBOutlet UILabel *topLabelText;
+    IBOutlet UITableView *mytableView;
+    NSMutableArray  *stringArray;
     
     // variable for my top label
     DataPlannerView * myTitle;    
 }
+
+-(IBAction)onclickDelete:(id)sender;
 
 @end
