@@ -13,12 +13,18 @@
 @interface ViewController : UIViewController <UITableViewDelegate>
 {
     IBOutlet UILabel *topLabelText;
+    IBOutlet UILabel *detailLabelText;
     IBOutlet UITableView *mytableView;
-    NSMutableArray  *stringArray;
+    NSMutableArray *stringArray;
+    NSMutableArray *stringDetailArray;
     NSArray *views;
     
+    
     // variable for my top label
-    DataPlannerView * myTitle;    
+    DataPlannerView * *myTextLabel;
+    DataPlannerView * myTitle;
+    DataPlannerView * myDetail;
+    
 }
 
 -(IBAction)onclickDelete:(id)sender;

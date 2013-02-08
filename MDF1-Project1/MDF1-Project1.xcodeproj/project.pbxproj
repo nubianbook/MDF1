@@ -25,6 +25,8 @@
 		EA0861E316C2DF85000EF857 /* Default-Landscape~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = EA0861E216C2DF85000EF857 /* Default-Landscape~ipad.png */; };
 		EA0861E516C2DF9A000EF857 /* Default-Landscape@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = EA0861E416C2DF9A000EF857 /* Default-Landscape@2x~ipad.png */; };
 		EA0861E816C2E19E000EF857 /* CustomTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EA0861E716C2E19E000EF857 /* CustomTableCell.m */; };
+		EA0861EE16C33CE5000EF857 /* DetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA0861ED16C33CE5000EF857 /* DetailView.xib */; };
+		EA0861F116C34007000EF857 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA0861F016C34007000EF857 /* DetailViewController.m */; };
 		EAA920EC16C06258002F5CC2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAA920EB16C06258002F5CC2 /* UIKit.framework */; };
 		EAA920EE16C06258002F5CC2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAA920ED16C06258002F5CC2 /* Foundation.framework */; };
 		EAA920F016C06258002F5CC2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAA920EF16C06258002F5CC2 /* CoreGraphics.framework */; };
@@ -60,6 +62,9 @@
 		EA0861E416C2DF9A000EF857 /* Default-Landscape@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape@2x~ipad.png"; sourceTree = "<group>"; };
 		EA0861E616C2E19E000EF857 /* CustomTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTableCell.h; sourceTree = "<group>"; };
 		EA0861E716C2E19E000EF857 /* CustomTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTableCell.m; sourceTree = "<group>"; };
+		EA0861ED16C33CE5000EF857 /* DetailView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailView.xib; sourceTree = "<group>"; };
+		EA0861EF16C34007000EF857 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		EA0861F016C34007000EF857 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		EAA920E716C06258002F5CC2 /* MDF1-Project1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MDF1-Project1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAA920EB16C06258002F5CC2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		EAA920ED16C06258002F5CC2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -153,6 +158,9 @@
 				EA08619516C2B0E1000EF857 /* CustomCellView.xib */,
 				EA0861E616C2E19E000EF857 /* CustomTableCell.h */,
 				EA0861E716C2E19E000EF857 /* CustomTableCell.m */,
+				EA0861ED16C33CE5000EF857 /* DetailView.xib */,
+				EA0861EF16C34007000EF857 /* DetailViewController.h */,
+				EA0861F016C34007000EF857 /* DetailViewController.m */,
 			);
 			path = "MDF1-Project1";
 			sourceTree = "<group>";
@@ -245,6 +253,7 @@
 				EA0861E116C2DF61000EF857 /* Default-Landscape@2x-ipad.png in Resources */,
 				EA0861E316C2DF85000EF857 /* Default-Landscape~ipad.png in Resources */,
 				EA0861E516C2DF9A000EF857 /* Default-Landscape@2x~ipad.png in Resources */,
+				EA0861EE16C33CE5000EF857 /* DetailView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +269,7 @@
 				EAA9210516C06258002F5CC2 /* ViewController.m in Sources */,
 				EAA9211B16C06547002F5CC2 /* DataPlannerView.m in Sources */,
 				EA0861E816C2E19E000EF857 /* CustomTableCell.m in Sources */,
+				EA0861F116C34007000EF857 /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

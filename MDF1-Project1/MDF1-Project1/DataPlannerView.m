@@ -13,7 +13,12 @@
 -(NSString*)getInfo
 {
     // This is the return string info that will be placed in the top label file
-    return @"Books of the Bible";
+    return @"Books of the Bible";    
+}
+
+-(NSString*)getDetail
+{
+    return @"stringDetailArray";
 }
 
 @end

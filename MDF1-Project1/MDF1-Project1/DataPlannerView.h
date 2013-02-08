@@ -13,4 +13,6 @@
 // This function is for the text in my top label file in both ipad and iphone
 -(NSString*)getInfo;
 
+-(NSString*)getDetail;
+
 @end

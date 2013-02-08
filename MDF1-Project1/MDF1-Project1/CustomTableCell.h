@@ -11,6 +11,8 @@
 @interface CustomTableCell : UITableViewCell
 {
     IBOutlet UILabel *textLabel;
+    IBOutlet UILabel *detailLabel;
 }
+
 
 @end

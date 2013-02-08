@@ -9,6 +9,8 @@
 #import "ViewController.h"
 #import "DataPlannerView.h"
 #import "CustomTableCell.h"
+#import "DetailViewController.h"
+
 @interface ViewController ()
 
 @end
@@ -20,6 +22,10 @@
     // I'm creating the object that pulls from the data source
     myTitle = [[DataPlannerView alloc] init];
     stringArray = [[NSMutableArray alloc] initWithObjects:@"Genesis", @"Exodus", @"Numbers", @"Deuteronomy", @"Joshua", @"Judges",  @"1 Samuel", @"2 Samuel", @"1 Kings", @"2 Kings", @"1 Chronicles", @"2 Chronicles", @"Ezra", @"Nehemiah", @"Esther", @"Job", @"The Psalms", @"Proverbs", @"Ecclesiastes", @"Song of Solomon", nil];
+    myDetail = [[DataPlannerView alloc] init];
+    // Experimenting with the code 
+    /*stringDetailArray = [[NSMutableArray alloc] initWithObjects:@"The First book of Creation", @"Second Book", @"Third Book", @"Fourth Book", @"Fifth Book", @"Sixth Book", @"Seventh Book", @"Eight Book", @"Nine Book", @"Tenth Book", @"Eleventh Book", @"Twelveth Book", @"Thirteenth Book", @"Fourteen Book", @"Fifteenth Book", @"Sixteenth Book", @"Seventh Book", @"Eighteenth Book", @"Nineteenth Book", @"Twentieth Book", nil];*/
+    
     
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
@@ -41,6 +47,8 @@
     
     // this is feeding the text in both ipad and iphone
     topLabelText.text = [myTitle getInfo];
+    //myTextLabel.text = []
+    detailLabelText.text = [myDetail getDetail];
     [super viewDidAppear:animated];
 }
 
@@ -48,6 +56,8 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {    // I will return an int because it is asking for numberofrows with the addition of stringArray count I can continue to add to the array if I specifically say return (a number)then I am constrained
     return [stringArray count];
+    
+    return [stringDetailArray count];
     
 }
 
@@ -79,7 +89,7 @@
 // This function will allow me to feed every table row one at a time
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-
+    
     static NSString *CellIdentifier = @"Cell";
     
     UITableViewCell *cell = [mytableView dequeueReusableCellWithIdentifier:CellIdentifier];
@@ -95,7 +105,9 @@
             if ([view isKindOfClass:[CustomTableCell class]])
             {
                 cell = (CustomTableCell*)view;
+                cell.accessoryType = UITableViewCellAccessoryDetailDisclosureButton;
                 cell.textLabel.text = [stringArray objectAtIndex:indexPath.row];
+                cell.detailTextLabel.text = [stringDetailArray objectAtIndex:indexPath.row];
             }
         }
     }
@@ -105,22 +117,25 @@
     return cell;
 
     
-    // these four lines of open code will create grouped sections
+    // these four lines of open code will create grouped sections or single sections
     NSInteger actualRow = 0;
     actualRow = (indexPath.section * 5) + indexPath.row;
     if (indexPath.section == 0)
      {
      cell.textLabel.text = (NSString*)[stringArray objectAtIndex:indexPath.row];
+     cell.detailTextLabel.text = (NSString*)[stringDetailArray objectAtIndex:indexPath.row];
      }
      else if (indexPath.section == 1)
      {
      cell.textLabel.text = (NSString*)[stringArray objectAtIndex:indexPath.row];
+     cell.detailTextLabel.text = (NSString*)[stringDetailArray objectAtIndex:indexPath.row];
      }
     static int count = 0; //I have to keep these lines for my project if I choose to use it
     cell.textLabel.text = (NSString*)[stringArray objectAtIndex:actualRow];
+    cell.detailTextLabel.text = (NSString*)[stringDetailArray objectAtIndex:actualRow];
     // I will need that code at the bottom for my project indexPath
     cell.textLabel.text = (NSString*)[stringArray objectAtIndex:indexPath.row];
-   
+    cell.detailTextLabel.text = (NSString*)[stringDetailArray objectAtIndex:indexPath.row];
     count++; //I will need this for my project
     return cell;
     
@@ -129,6 +144,15 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     NSLog(@"row=%d name=%@", indexPath.row, [stringArray objectAtIndex:indexPath.row]);
+    
+    DetailViewController *myDetailController = [[DetailViewController alloc] initWithNibName:@"DetailView" bundle:nil];
+    
+    if (myDetailController != nil)
+    {
+        [self presentViewController:myDetailController animated:true completion:nil];
+    }
+
+    
 }
 
 @end
