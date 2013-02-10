@@ -92,6 +92,7 @@
         NSLog(@"we want to delete row=%d", indexPath.row);
         // Removes the object from the data array
         [stringArray removeObjectAtIndex:indexPath.row];
+        [stringDetailArray removeObjectAtIndex:indexPath.row];
         
         [mytableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:true];
     }
