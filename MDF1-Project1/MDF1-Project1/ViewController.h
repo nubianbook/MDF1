@@ -10,13 +10,16 @@
 @class DataPlannerView;
 
 
+
 @interface ViewController : UIViewController <UITableViewDelegate>
 {
     IBOutlet UILabel *topLabelText;
     IBOutlet UILabel *detailLabelText;
     IBOutlet UITableView *mytableView;
+    IBOutlet UIButton *deleteButton;
     NSMutableArray *stringArray;
     NSMutableArray *stringDetailArray;
+    NSMutableArray *stringSubViewArray;
     NSArray *views;
     
     
@@ -24,8 +27,12 @@
     DataPlannerView * *myTextLabel;
     DataPlannerView * myTitle;
     DataPlannerView * myDetail;
+    DataPlannerView * mySubView;
+
     
 }
+
+@property (nonatomic, strong) IBOutlet UILabel *subView;
 
 -(IBAction)onclickDelete:(id)sender;
 

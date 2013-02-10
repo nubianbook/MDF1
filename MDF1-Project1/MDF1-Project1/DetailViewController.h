@@ -8,11 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
+
 @interface DetailViewController : UIViewController
 {
     IBOutlet UILabel *detailLabel;
 }
 
+@property (strong, nonatomic)  IBOutlet UILabel *detailLabel;
+
 -(IBAction)onClose:(id)sender;
+
+
 
 @end

@@ -18,7 +18,12 @@
 
 -(NSString*)getDetail
 {
-    return @"stringDetailArray";
+    return @"Facts about the Bible";
+}
+
+-(NSString*)getSubView
+{
+    return @"Fun Stuff";
 }
 
 @end

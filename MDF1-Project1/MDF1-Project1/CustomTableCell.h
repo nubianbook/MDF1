@@ -11,8 +11,12 @@
 @interface CustomTableCell : UITableViewCell
 {
     IBOutlet UILabel *textLabel;
-    IBOutlet UILabel *detailLabel;
+    IBOutlet UILabel *detailTextLabel;
+    IBOutlet UILabel *subViewTetLabel;
+    
 }
-
+@property (nonatomic, strong) IBOutlet UILabel *textLabel;
+@property (nonatomic, strong) IBOutlet UILabel *detailTextLabel;
+@property (nonatomic, strong) IBOutlet UILabel *subViewTextLabel;
 
 @end

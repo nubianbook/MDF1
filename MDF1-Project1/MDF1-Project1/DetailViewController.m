@@ -13,6 +13,7 @@
 @end
 
 @implementation DetailViewController
+@synthesize detailLabel;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {

@@ -21,10 +21,12 @@
 {
     // I'm creating the object that pulls from the data source
     myTitle = [[DataPlannerView alloc] init];
-    stringArray = [[NSMutableArray alloc] initWithObjects:@"Genesis", @"Exodus", @"Numbers", @"Deuteronomy", @"Joshua", @"Judges",  @"1 Samuel", @"2 Samuel", @"1 Kings", @"2 Kings", @"1 Chronicles", @"2 Chronicles", @"Ezra", @"Nehemiah", @"Esther", @"Job", @"The Psalms", @"Proverbs", @"Ecclesiastes", @"Song of Solomon", nil];
+    stringArray = [[NSMutableArray alloc] initWithObjects:@"Genesis", @"Exodus", @"Leviticus", @"Numbers", @"Deuteronomy", @"Joshua", @"Judges",  @"1 Samuel", @"2 Samuel", @"1 Kings", @"2 Kings", @"1 Chronicles", @"2 Chronicles", @"Ezra", @"Nehemiah", @"Esther", @"Job", @"The Psalms", @"Proverbs", @"Ecclesiastes", nil];
     myDetail = [[DataPlannerView alloc] init];
-    // Experimenting with the code 
-    /*stringDetailArray = [[NSMutableArray alloc] initWithObjects:@"The First book of Creation", @"Second Book", @"Third Book", @"Fourth Book", @"Fifth Book", @"Sixth Book", @"Seventh Book", @"Eight Book", @"Nine Book", @"Tenth Book", @"Eleventh Book", @"Twelveth Book", @"Thirteenth Book", @"Fourteen Book", @"Fifteenth Book", @"Sixteenth Book", @"Seventh Book", @"Eighteenth Book", @"Nineteenth Book", @"Twentieth Book", nil];*/
+   // Experimenting with the code
+    stringDetailArray = [[NSMutableArray alloc] initWithObjects:@"The First book of Creation", @"Second Book", @"Third Book", @"Fourth Book", @"Fifth Book", @"Sixth Book", @"Seventh Book", @"Eight Book", @"Nine Book", @"Tenth Book", @"Eleventh Book", @"Twelveth Book", @"Thirteenth Book", @"Fourteen Book", @"Fifteenth Book", @"Sixteenth Book", @"Seventh Book", @"Eighteenth Book", @"Nineteenth Book", @"Twentieth Book", nil];
+    mySubView = [[DataPlannerView alloc] init];
+    stringSubViewArray = [[NSMutableArray alloc] initWithObjects:@"The Creation", @"Leaving Egypt", @"Learning God's Law", @"Family Count Down", @"More History", @"Joshua's Army", @"The Leaders", @"A Prophets Story", @"Prophet's Story pt", @"King David & more", @"More about Kings", @"History pt3", @"History pt4", @"Who is Ezra", @"Who is Nehemiah", @"Who is Esther", @"Who is Job", @"The Songs of David", @"Wise Words", @"More Words of Wisdom", nil];
     
     
     [super viewDidLoad];
@@ -39,7 +41,16 @@
 
 -(IBAction)onclickDelete:(id)sender
 {
-    [mytableView setEditing:true];
+    if ([deleteButton.titleLabel.text isEqual:@"Edit"])
+    {
+        [mytableView setEditing:true];
+        [deleteButton setTitle:@"Clear" forState:(UIControlStateNormal)];
+        
+    } else {
+        [deleteButton setTitle:@"Edit" forState:UIControlStateNormal];
+        [mytableView setEditing:false];
+    }
+    
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -49,6 +60,7 @@
     topLabelText.text = [myTitle getInfo];
     //myTextLabel.text = []
     detailLabelText.text = [myDetail getDetail];
+    _subView.text = [mySubView getSubView];
     [super viewDidAppear:animated];
 }
 
@@ -57,7 +69,6 @@
 {    // I will return an int because it is asking for numberofrows with the addition of stringArray count I can continue to add to the array if I specifically say return (a number)then I am constrained
     return [stringArray count];
     
-    return [stringDetailArray count];
     
 }
 
@@ -92,7 +103,7 @@
     
     static NSString *CellIdentifier = @"Cell";
     
-    UITableViewCell *cell = [mytableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    CustomTableCell *cell = [mytableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil)
     {
         //cell = [[CustomTableCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
@@ -108,6 +119,7 @@
                 cell.accessoryType = UITableViewCellAccessoryDetailDisclosureButton;
                 cell.textLabel.text = [stringArray objectAtIndex:indexPath.row];
                 cell.detailTextLabel.text = [stringDetailArray objectAtIndex:indexPath.row];
+                cell.subViewTextLabel.text = [stringSubViewArray objectAtIndex:indexPath.row];
             }
         }
     }
@@ -128,10 +140,10 @@
      else if (indexPath.section == 1)
      {
      cell.textLabel.text = (NSString*)[stringArray objectAtIndex:indexPath.row];
-     cell.detailTextLabel.text = (NSString*)[stringDetailArray objectAtIndex:indexPath.row];
+     //cell.detailTextLabel.text = (NSString*)[stringDetailArray objectAtIndex:indexPath.row];
      }
     static int count = 0; //I have to keep these lines for my project if I choose to use it
-    cell.textLabel.text = (NSString*)[stringArray objectAtIndex:actualRow];
+   cell.textLabel.text = (NSString*)[stringArray objectAtIndex:actualRow];
     cell.detailTextLabel.text = (NSString*)[stringDetailArray objectAtIndex:actualRow];
     // I will need that code at the bottom for my project indexPath
     cell.textLabel.text = (NSString*)[stringArray objectAtIndex:indexPath.row];
@@ -150,6 +162,7 @@
     if (myDetailController != nil)
     {
         [self presentViewController:myDetailController animated:true completion:nil];
+        myDetailController.detailLabel.text= (NSString*)[stringDetailArray objectAtIndex:indexPath.row];
     }
 
     
