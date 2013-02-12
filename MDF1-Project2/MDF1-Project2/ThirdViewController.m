@@ -17,8 +17,12 @@
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
+    if (self)
+    {
         // Custom initialization
+        self.title = NSLocalizedString(@"Squash", @"Squash");
+        self.tabBarItem.image = [UIImage imageNamed:@"third"];
+
     }
     return self;
 }

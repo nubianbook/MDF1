@@ -7,7 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DetailViewController.h"
 
-@interface FirstViewController : UIViewController
+@class FirstViewController;
 
+@interface FirstViewController : UIViewController <UITableViewDelegate>
+{
+    IBOutlet UITableView *mytableView;
+    NSMutableArray *stringArray;
+    NSMutableArray *stringNameArray;
+    NSMutableArray *stringDetailArray;
+}
+
+-(IBAction)onclick:(id)sender;
 @end

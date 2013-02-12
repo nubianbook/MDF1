@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EAE91E9716C9F60D00F63AE8 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAE91E9616C9F60D00F63AE8 /* FirstViewController.m */; };
+		EAE91E9B16CA0E7400F63AE8 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAE91E9916CA0E7300F63AE8 /* DetailViewController.m */; };
+		EAE91E9C16CA0E7400F63AE8 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAE91E9A16CA0E7300F63AE8 /* DetailViewController.xib */; };
 		EAFFDE1916C963BE00822EC5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAFFDE1816C963BE00822EC5 /* UIKit.framework */; };
 		EAFFDE1B16C963BE00822EC5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAFFDE1A16C963BE00822EC5 /* Foundation.framework */; };
 		EAFFDE1D16C963BE00822EC5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAFFDE1C16C963BE00822EC5 /* CoreGraphics.framework */; };
@@ -16,7 +19,6 @@
 		EAFFDE2B16C963BE00822EC5 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = EAFFDE2A16C963BE00822EC5 /* Default.png */; };
 		EAFFDE2D16C963BE00822EC5 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EAFFDE2C16C963BE00822EC5 /* Default@2x.png */; };
 		EAFFDE2F16C963BE00822EC5 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EAFFDE2E16C963BE00822EC5 /* Default-568h@2x.png */; };
-		EAFFDE3216C963BE00822EC5 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAFFDE3116C963BE00822EC5 /* FirstViewController.m */; };
 		EAFFDE3416C963BE00822EC5 /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = EAFFDE3316C963BE00822EC5 /* first.png */; };
 		EAFFDE3616C963BE00822EC5 /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EAFFDE3516C963BE00822EC5 /* first@2x.png */; };
 		EAFFDE3916C963BE00822EC5 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAFFDE3816C963BE00822EC5 /* SecondViewController.m */; };
@@ -24,9 +26,17 @@
 		EAFFDE3D16C963BE00822EC5 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EAFFDE3C16C963BE00822EC5 /* second@2x.png */; };
 		EAFFDE4016C963BE00822EC5 /* FirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAFFDE3E16C963BE00822EC5 /* FirstViewController.xib */; };
 		EAFFDE4316C963BE00822EC5 /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAFFDE4116C963BE00822EC5 /* SecondViewController.xib */; };
+		EAFFDE4A16C966AA00822EC5 /* ThirdView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAFFDE4916C966AA00822EC5 /* ThirdView.xib */; };
+		EAFFDE4D16C9670C00822EC5 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAFFDE4C16C9670C00822EC5 /* ThirdViewController.m */; };
+		EAFFDE5116C987FD00822EC5 /* FourthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAFFDE4F16C987FD00822EC5 /* FourthViewController.m */; };
+		EAFFDE5216C987FD00822EC5 /* FourthViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAFFDE5016C987FD00822EC5 /* FourthViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EAE91E9616C9F60D00F63AE8 /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		EAE91E9816CA0E7300F63AE8 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		EAE91E9916CA0E7300F63AE8 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		EAE91E9A16CA0E7300F63AE8 /* DetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
 		EAFFDE1416C963BE00822EC5 /* MDF1-Project2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MDF1-Project2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAFFDE1816C963BE00822EC5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		EAFFDE1A16C963BE00822EC5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -41,7 +51,6 @@
 		EAFFDE2C16C963BE00822EC5 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		EAFFDE2E16C963BE00822EC5 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		EAFFDE3016C963BE00822EC5 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		EAFFDE3116C963BE00822EC5 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
 		EAFFDE3316C963BE00822EC5 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
 		EAFFDE3516C963BE00822EC5 /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
 		EAFFDE3716C963BE00822EC5 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
@@ -50,6 +59,12 @@
 		EAFFDE3C16C963BE00822EC5 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
 		EAFFDE3F16C963BE00822EC5 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/FirstViewController.xib; sourceTree = "<group>"; };
 		EAFFDE4216C963BE00822EC5 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SecondViewController.xib; sourceTree = "<group>"; };
+		EAFFDE4916C966AA00822EC5 /* ThirdView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ThirdView.xib; sourceTree = "<group>"; };
+		EAFFDE4B16C9670C00822EC5 /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
+		EAFFDE4C16C9670C00822EC5 /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
+		EAFFDE4E16C987FD00822EC5 /* FourthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FourthViewController.h; sourceTree = "<group>"; };
+		EAFFDE4F16C987FD00822EC5 /* FourthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FourthViewController.m; sourceTree = "<group>"; };
+		EAFFDE5016C987FD00822EC5 /* FourthViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FourthViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,17 +113,26 @@
 			children = (
 				EAFFDE2716C963BE00822EC5 /* AppDelegate.h */,
 				EAFFDE2816C963BE00822EC5 /* AppDelegate.m */,
-				EAFFDE3016C963BE00822EC5 /* FirstViewController.h */,
-				EAFFDE3116C963BE00822EC5 /* FirstViewController.m */,
 				EAFFDE3316C963BE00822EC5 /* first.png */,
 				EAFFDE3516C963BE00822EC5 /* first@2x.png */,
-				EAFFDE3716C963BE00822EC5 /* SecondViewController.h */,
-				EAFFDE3816C963BE00822EC5 /* SecondViewController.m */,
 				EAFFDE3A16C963BE00822EC5 /* second.png */,
 				EAFFDE3C16C963BE00822EC5 /* second@2x.png */,
+				EAFFDE3016C963BE00822EC5 /* FirstViewController.h */,
+				EAE91E9616C9F60D00F63AE8 /* FirstViewController.m */,
 				EAFFDE3E16C963BE00822EC5 /* FirstViewController.xib */,
+				EAFFDE3716C963BE00822EC5 /* SecondViewController.h */,
+				EAFFDE3816C963BE00822EC5 /* SecondViewController.m */,
 				EAFFDE4116C963BE00822EC5 /* SecondViewController.xib */,
+				EAFFDE4916C966AA00822EC5 /* ThirdView.xib */,
+				EAFFDE4B16C9670C00822EC5 /* ThirdViewController.h */,
+				EAFFDE4C16C9670C00822EC5 /* ThirdViewController.m */,
+				EAFFDE4E16C987FD00822EC5 /* FourthViewController.h */,
+				EAFFDE4F16C987FD00822EC5 /* FourthViewController.m */,
+				EAFFDE5016C987FD00822EC5 /* FourthViewController.xib */,
 				EAFFDE1F16C963BE00822EC5 /* Supporting Files */,
+				EAE91E9816CA0E7300F63AE8 /* DetailViewController.h */,
+				EAE91E9916CA0E7300F63AE8 /* DetailViewController.m */,
+				EAE91E9A16CA0E7300F63AE8 /* DetailViewController.xib */,
 			);
 			path = "MDF1-Project2";
 			sourceTree = "<group>";
@@ -188,6 +212,9 @@
 				EAFFDE3D16C963BE00822EC5 /* second@2x.png in Resources */,
 				EAFFDE4016C963BE00822EC5 /* FirstViewController.xib in Resources */,
 				EAFFDE4316C963BE00822EC5 /* SecondViewController.xib in Resources */,
+				EAFFDE4A16C966AA00822EC5 /* ThirdView.xib in Resources */,
+				EAFFDE5216C987FD00822EC5 /* FourthViewController.xib in Resources */,
+				EAE91E9C16CA0E7400F63AE8 /* DetailViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,8 +227,11 @@
 			files = (
 				EAFFDE2516C963BE00822EC5 /* main.m in Sources */,
 				EAFFDE2916C963BE00822EC5 /* AppDelegate.m in Sources */,
-				EAFFDE3216C963BE00822EC5 /* FirstViewController.m in Sources */,
 				EAFFDE3916C963BE00822EC5 /* SecondViewController.m in Sources */,
+				EAFFDE4D16C9670C00822EC5 /* ThirdViewController.m in Sources */,
+				EAFFDE5116C987FD00822EC5 /* FourthViewController.m in Sources */,
+				EAE91E9716C9F60D00F63AE8 /* FirstViewController.m in Sources */,
+				EAE91E9B16CA0E7400F63AE8 /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,6 +318,7 @@
 		EAFFDE4716C963BE00822EC5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_WARN_OBJCPP_ARC_ABI = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MDF1-Project2/MDF1-Project2-Prefix.pch";
 				INFOPLIST_FILE = "MDF1-Project2/MDF1-Project2-Info.plist";
@@ -299,6 +330,7 @@
 		EAFFDE4816C963BE00822EC5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_WARN_OBJCPP_ARC_ABI = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MDF1-Project2/MDF1-Project2-Prefix.pch";
 				INFOPLIST_FILE = "MDF1-Project2/MDF1-Project2-Info.plist";
@@ -326,6 +358,7 @@
 				EAFFDE4816C963BE00822EC5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

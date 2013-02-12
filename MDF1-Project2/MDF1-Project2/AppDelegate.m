@@ -9,20 +9,40 @@
 #import "AppDelegate.h"
 
 #import "FirstViewController.h"
-
 #import "SecondViewController.h"
+#import "ThirdViewController.h"
+#import "FourthViewController.h"
+
+@interface AppDelegate()
+
+
+@end
 
 @implementation AppDelegate
+
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
     // Override point for customization after application launch.
     UIViewController *viewController1 = [[FirstViewController alloc] initWithNibName:@"FirstViewController" bundle:nil];
+    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:viewController1];
+    
     UIViewController *viewController2 = [[SecondViewController alloc] initWithNibName:@"SecondViewController" bundle:nil];
+    UINavigationController *navController1 = [[UINavigationController alloc]initWithRootViewController:viewController2];
+    
+    UIViewController *viewController3 = [[ThirdViewController alloc]
+        initWithNibName:@"ThirdView" bundle:nil];
+    UINavigationController *navController2 = [[UINavigationController alloc]initWithRootViewController:viewController3];
+    
+    UIViewController *viewController4 = [[FourthViewController alloc] initWithNibName:@"FourthViewController" bundle:nil];
+    UINavigationController *navController3 = [[UINavigationController alloc]initWithRootViewController:viewController4];
+    
     self.tabBarController = [[UITabBarController alloc] init];
-    self.tabBarController.viewControllers = @[viewController1, viewController2];
+    self.tabBarController.viewControllers = [NSArray arrayWithObjects:navController, navController1, navController2, navController3, nil];
     self.window.rootViewController = self.tabBarController;
+    
     [self.window makeKeyAndVisible];
     return YES;
 }
@@ -53,6 +73,8 @@
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
+
+
 
 /*
 // Optional UITabBarControllerDelegate method.
