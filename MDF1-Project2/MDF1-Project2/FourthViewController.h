@@ -9,5 +9,12 @@
 #import <UIKit/UIKit.h>
 
 @interface FourthViewController : UIViewController
+{
+
+}
+
+-(IBAction)onClick:(id)sender;
+
+-(IBAction)link;
 
 @end

@@ -10,7 +10,7 @@
 
 @implementation CustomTableCell
 
-
+@synthesize subViewTextLabel;
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {

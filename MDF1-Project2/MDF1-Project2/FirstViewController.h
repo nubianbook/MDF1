@@ -14,10 +14,19 @@
 @interface FirstViewController : UIViewController <UITableViewDelegate>
 {
     IBOutlet UITableView *mytableView;
+    NSString *namesArray;
     NSMutableArray *stringArray;
     NSMutableArray *stringNameArray;
     NSMutableArray *stringDetailArray;
+    NSMutableArray *stringinfoArray;
+    NSMutableArray *stringURLArray;
 }
 
--(IBAction)onclick:(id)sender;
+-(IBAction)onClick:(id)sender;
+
+@property (strong, nonatomic) UILabel *detailLabel;
+@property (strong, nonatomic) UILabel *nameLabel;
+@property (retain, nonatomic) UILabel *infoLabel;
+@property (retain, nonatomic) UILabel *urlLabel;
+
 @end

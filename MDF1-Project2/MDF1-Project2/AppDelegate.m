@@ -12,6 +12,7 @@
 #import "SecondViewController.h"
 #import "ThirdViewController.h"
 #import "FourthViewController.h"
+#import "DetailViewController.h"
 
 @interface AppDelegate()
 

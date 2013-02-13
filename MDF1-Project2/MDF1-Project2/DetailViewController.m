@@ -7,6 +7,7 @@
 //
 
 #import "DetailViewController.h"
+#import "ThirdViewController.h"
 
 @interface DetailViewController ()
 
@@ -16,6 +17,8 @@
 
 @synthesize detailLabel;
 @synthesize nameLabel;
+@synthesize infoLabel;
+@synthesize urlLabel;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {

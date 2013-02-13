@@ -12,11 +12,16 @@
 {
     IBOutlet UILabel *detailLabel;
     IBOutlet UILabel *nameLabel;
+    IBOutlet UILabel *infoLabel;
+    IBOutlet UILabel *urlLabel;
 }
 
 -(IBAction)onClose:(id)sender;
 
+
 @property (strong, nonatomic)  IBOutlet UILabel *detailLabel;
 @property (strong, nonatomic)  IBOutlet UILabel *nameLabel;
+@property (strong, nonatomic)  IBOutlet UILabel *infoLabel;
+@property (strong, nonatomic)  IBOutlet UILabel *urlLabel;
 
 @end

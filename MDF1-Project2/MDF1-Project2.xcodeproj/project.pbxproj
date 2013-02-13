@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EA0AE2CA16CB1AAB00E129D1 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA0AE2C716CB1AAB00E129D1 /* Default-568h@2x.png */; };
+		EA0AE2CB16CB1AAB00E129D1 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = EA0AE2C816CB1AAB00E129D1 /* Default.png */; };
+		EA0AE2CC16CB1AAB00E129D1 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA0AE2C916CB1AAB00E129D1 /* Default@2x.png */; };
+		EA0AE2D016CB1B1300E129D1 /* gardening.png in Resources */ = {isa = PBXBuildFile; fileRef = EA0AE2CE16CB1B1300E129D1 /* gardening.png */; };
+		EA0AE2D116CB1B1300E129D1 /* squash1.png in Resources */ = {isa = PBXBuildFile; fileRef = EA0AE2CF16CB1B1300E129D1 /* squash1.png */; };
+		EA0AE2D316CB277700E129D1 /* string_beans.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EA0AE2D216CB277700E129D1 /* string_beans.jpg */; };
+		EA0AE2D916CB2B7000E129D1 /* gardening.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EA0AE2D816CB2B7000E129D1 /* gardening.jpg */; };
 		EAE91E9716C9F60D00F63AE8 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAE91E9616C9F60D00F63AE8 /* FirstViewController.m */; };
 		EAE91E9B16CA0E7400F63AE8 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAE91E9916CA0E7300F63AE8 /* DetailViewController.m */; };
 		EAE91E9C16CA0E7400F63AE8 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAE91E9A16CA0E7300F63AE8 /* DetailViewController.xib */; };
@@ -33,6 +40,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EA0AE2C716CB1AAB00E129D1 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../Default-568h@2x.png"; sourceTree = "<group>"; };
+		EA0AE2C816CB1AAB00E129D1 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = ../Default.png; sourceTree = "<group>"; };
+		EA0AE2C916CB1AAB00E129D1 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "../Default@2x.png"; sourceTree = "<group>"; };
+		EA0AE2CE16CB1B1300E129D1 /* gardening.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gardening.png; path = ../gardening.png; sourceTree = "<group>"; };
+		EA0AE2CF16CB1B1300E129D1 /* squash1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = squash1.png; path = ../squash1.png; sourceTree = "<group>"; };
+		EA0AE2D216CB277700E129D1 /* string_beans.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = string_beans.jpg; path = ../string_beans.jpg; sourceTree = "<group>"; };
+		EA0AE2D816CB2B7000E129D1 /* gardening.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = gardening.jpg; path = ../gardening.jpg; sourceTree = "<group>"; };
 		EAE91E9616C9F60D00F63AE8 /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
 		EAE91E9816CA0E7300F63AE8 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		EAE91E9916CA0E7300F63AE8 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
@@ -111,6 +125,13 @@
 		EAFFDE1E16C963BE00822EC5 /* MDF1-Project2 */ = {
 			isa = PBXGroup;
 			children = (
+				EA0AE2D216CB277700E129D1 /* string_beans.jpg */,
+				EA0AE2D816CB2B7000E129D1 /* gardening.jpg */,
+				EA0AE2CE16CB1B1300E129D1 /* gardening.png */,
+				EA0AE2CF16CB1B1300E129D1 /* squash1.png */,
+				EA0AE2C716CB1AAB00E129D1 /* Default-568h@2x.png */,
+				EA0AE2C816CB1AAB00E129D1 /* Default.png */,
+				EA0AE2C916CB1AAB00E129D1 /* Default@2x.png */,
 				EAFFDE2716C963BE00822EC5 /* AppDelegate.h */,
 				EAFFDE2816C963BE00822EC5 /* AppDelegate.m */,
 				EAFFDE3316C963BE00822EC5 /* first.png */,
@@ -215,6 +236,13 @@
 				EAFFDE4A16C966AA00822EC5 /* ThirdView.xib in Resources */,
 				EAFFDE5216C987FD00822EC5 /* FourthViewController.xib in Resources */,
 				EAE91E9C16CA0E7400F63AE8 /* DetailViewController.xib in Resources */,
+				EA0AE2CA16CB1AAB00E129D1 /* Default-568h@2x.png in Resources */,
+				EA0AE2CB16CB1AAB00E129D1 /* Default.png in Resources */,
+				EA0AE2CC16CB1AAB00E129D1 /* Default@2x.png in Resources */,
+				EA0AE2D016CB1B1300E129D1 /* gardening.png in Resources */,
+				EA0AE2D116CB1B1300E129D1 /* squash1.png in Resources */,
+				EA0AE2D316CB277700E129D1 /* string_beans.jpg in Resources */,
+				EA0AE2D916CB2B7000E129D1 /* gardening.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

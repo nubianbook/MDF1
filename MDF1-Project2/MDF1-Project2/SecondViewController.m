@@ -6,7 +6,9 @@
 //  Copyright (c) 2013 Carol Gaylor. All rights reserved.
 //
 
+
 #import "SecondViewController.h"
+#import "ThirdViewController.h"
 
 @interface SecondViewController ()
 
@@ -27,6 +29,7 @@
 							
 - (void)viewDidLoad
 {
+    
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }
@@ -37,4 +40,16 @@
     // Dispose of any resources that can be recreated.
 }
 
+
+-(IBAction)onClick:(id)sender
+{
+    // this creates the secondView controller to make sure it's valid then moves to the next one
+    SecondViewController *secondView = [[SecondViewController alloc] initWithNibName:@"ThirdView" bundle:nil];
+    if (secondView != nil)
+    {
+        // Moves to the second view
+        [self.navigationController pushViewController:secondView animated:true];
+        
+    }
+}
 @end

@@ -8,6 +8,7 @@
 
 #import "FourthViewController.h"
 
+
 @interface FourthViewController ()
 
 @end
@@ -36,5 +37,29 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+-(IBAction)link
+{
+    [[UIApplication sharedApplication]
+     
+     openURL:[NSURL URLWithString:@"http://www.youtube.com/geekylemon"]];
+}
+
+-(IBAction)onClick:(id)sender
+{
+// this creates the secondView controller to make sure it's valid then moves to the next one
+
+    FourthViewController *fourthView = [[FourthViewController alloc] initWithNibName:@"ThirdView" bundle:nil];
+if (fourthView != nil)
+{
+    // Moves to the second view
+    [self.navigationController pushViewController:fourthView animated:true];
+    
+}
+    
+}
+
+
+
 
 @end

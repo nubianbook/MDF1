@@ -12,7 +12,7 @@
 {
     IBOutlet UILabel *textLabel;
     IBOutlet UILabel *detailTextLabel;
-    IBOutlet UILabel *subViewTetLabel;
+    IBOutlet UILabel *subViewTextLabel;
     
 }
 @property (nonatomic, strong) IBOutlet UILabel *textLabel;
