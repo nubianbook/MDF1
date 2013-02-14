@@ -8,6 +8,7 @@
 
 #import "DetailViewController.h"
 #import "ThirdViewController.h"
+#import "FirstViewController.h"
 
 @interface DetailViewController ()
 
@@ -19,6 +20,7 @@
 @synthesize nameLabel;
 @synthesize infoLabel;
 @synthesize urlLabel;
+@synthesize nextButton;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -46,5 +48,24 @@
     [self dismissViewControllerAnimated:true completion:nil];
 }
 
+-(IBAction)nextonClick:(id)sender
+{
+    
+    NSLog(@"hit me");
+   // [UIView beginAnimations:nil context:nil];
+    {
+        // this creates the secondView controller to make sure it's valid then moves to the next one
+        FirstViewController *beansView = [[FirstViewController alloc] initWithNibName:@"ThirdView" bundle:nil];
+        if (beansView != nil)
+        {
+            // Moves to the second view
+            [self.navigationController pushViewController:beansView animated:true];            
+            
+        }else{
+            NSLog(@"Button Failed");
+        }
+}
+
+}
 
 @end

@@ -14,14 +14,18 @@
     IBOutlet UILabel *nameLabel;
     IBOutlet UILabel *infoLabel;
     IBOutlet UILabel *urlLabel;
+    IBOutlet UIBarItem *nextButton;
 }
 
+
 -(IBAction)onClose:(id)sender;
+-(IBAction)nextonClick:(id)sender;
 
 
 @property (strong, nonatomic)  IBOutlet UILabel *detailLabel;
 @property (strong, nonatomic)  IBOutlet UILabel *nameLabel;
 @property (strong, nonatomic)  IBOutlet UILabel *infoLabel;
 @property (strong, nonatomic)  IBOutlet UILabel *urlLabel;
+@property (strong, nonatomic)  IBOutlet UIBarItem *nextButton;
 
 @end
