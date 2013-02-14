@@ -40,16 +40,23 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(IBAction)link
+{
+    [[UIApplication sharedApplication]
+     
+     openURL:[NSURL URLWithString:@"http://www.foodnetwork.com/recipes/sunny-anderson/second-day-turkey-and-string-bean-pot-pies-recipe/index.html"]];
+}
 
--(IBAction)onClick:(id)sender
+
+/*-(IBAction)onClick:(id)sender
 {
     // this creates the secondView controller to make sure it's valid then moves to the next one
-    SecondViewController *secondView = [[SecondViewController alloc] initWithNibName:@"ThirdView" bundle:nil];
+    SecondViewController *secondView = [[SecondViewController alloc] initWithNibName:@"FirstViewController" bundle:nil];
     if (secondView != nil)
     {
         // Moves to the second view
         [self.navigationController pushViewController:secondView animated:true];
         
     }
-}
+}*/
 @end

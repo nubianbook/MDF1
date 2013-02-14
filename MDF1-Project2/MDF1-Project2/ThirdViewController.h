@@ -12,4 +12,8 @@
 
 -(IBAction)onClick:(id)sender;
 
+-(IBAction)link;
+
+
+
 @end

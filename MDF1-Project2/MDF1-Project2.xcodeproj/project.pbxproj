@@ -17,6 +17,13 @@
 		EAE91E9716C9F60D00F63AE8 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAE91E9616C9F60D00F63AE8 /* FirstViewController.m */; };
 		EAE91E9B16CA0E7400F63AE8 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAE91E9916CA0E7300F63AE8 /* DetailViewController.m */; };
 		EAE91E9C16CA0E7400F63AE8 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAE91E9A16CA0E7300F63AE8 /* DetailViewController.xib */; };
+		EAF6A02916CC7722002A7D80 /* squash.png in Resources */ = {isa = PBXBuildFile; fileRef = EAF6A02816CC7722002A7D80 /* squash.png */; };
+		EAF6A04916CC8619002A7D80 /* garden3.png in Resources */ = {isa = PBXBuildFile; fileRef = EAF6A04616CC8619002A7D80 /* garden3.png */; };
+		EAF6A04A16CC8619002A7D80 /* garden4.png in Resources */ = {isa = PBXBuildFile; fileRef = EAF6A04716CC8619002A7D80 /* garden4.png */; };
+		EAF6A04B16CC8619002A7D80 /* garden5.png in Resources */ = {isa = PBXBuildFile; fileRef = EAF6A04816CC8619002A7D80 /* garden5.png */; };
+		EAF6A04E16CC878D002A7D80 /* garden.png in Resources */ = {isa = PBXBuildFile; fileRef = EAF6A04C16CC878D002A7D80 /* garden.png */; };
+		EAF6A04F16CC878D002A7D80 /* garden2.png in Resources */ = {isa = PBXBuildFile; fileRef = EAF6A04D16CC878D002A7D80 /* garden2.png */; };
+		EAF6A05116CC883C002A7D80 /* garden1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EAF6A05016CC883C002A7D80 /* garden1.jpg */; };
 		EAFFDE1916C963BE00822EC5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAFFDE1816C963BE00822EC5 /* UIKit.framework */; };
 		EAFFDE1B16C963BE00822EC5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAFFDE1A16C963BE00822EC5 /* Foundation.framework */; };
 		EAFFDE1D16C963BE00822EC5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAFFDE1C16C963BE00822EC5 /* CoreGraphics.framework */; };
@@ -51,6 +58,13 @@
 		EAE91E9816CA0E7300F63AE8 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		EAE91E9916CA0E7300F63AE8 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		EAE91E9A16CA0E7300F63AE8 /* DetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
+		EAF6A02816CC7722002A7D80 /* squash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = squash.png; sourceTree = "<group>"; };
+		EAF6A04616CC8619002A7D80 /* garden3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = garden3.png; sourceTree = "<group>"; };
+		EAF6A04716CC8619002A7D80 /* garden4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = garden4.png; sourceTree = "<group>"; };
+		EAF6A04816CC8619002A7D80 /* garden5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = garden5.png; sourceTree = "<group>"; };
+		EAF6A04C16CC878D002A7D80 /* garden.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = garden.png; sourceTree = "<group>"; };
+		EAF6A04D16CC878D002A7D80 /* garden2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = garden2.png; sourceTree = "<group>"; };
+		EAF6A05016CC883C002A7D80 /* garden1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = garden1.jpg; path = ../garden1.jpg; sourceTree = "<group>"; };
 		EAFFDE1416C963BE00822EC5 /* MDF1-Project2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MDF1-Project2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAFFDE1816C963BE00822EC5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		EAFFDE1A16C963BE00822EC5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -125,6 +139,13 @@
 		EAFFDE1E16C963BE00822EC5 /* MDF1-Project2 */ = {
 			isa = PBXGroup;
 			children = (
+				EAF6A05016CC883C002A7D80 /* garden1.jpg */,
+				EAF6A04C16CC878D002A7D80 /* garden.png */,
+				EAF6A04D16CC878D002A7D80 /* garden2.png */,
+				EAF6A04616CC8619002A7D80 /* garden3.png */,
+				EAF6A04716CC8619002A7D80 /* garden4.png */,
+				EAF6A04816CC8619002A7D80 /* garden5.png */,
+				EAF6A02816CC7722002A7D80 /* squash.png */,
 				EA0AE2D216CB277700E129D1 /* string_beans.jpg */,
 				EA0AE2D816CB2B7000E129D1 /* gardening.jpg */,
 				EA0AE2CE16CB1B1300E129D1 /* gardening.png */,
@@ -243,6 +264,13 @@
 				EA0AE2D116CB1B1300E129D1 /* squash1.png in Resources */,
 				EA0AE2D316CB277700E129D1 /* string_beans.jpg in Resources */,
 				EA0AE2D916CB2B7000E129D1 /* gardening.jpg in Resources */,
+				EAF6A02916CC7722002A7D80 /* squash.png in Resources */,
+				EAF6A04916CC8619002A7D80 /* garden3.png in Resources */,
+				EAF6A04A16CC8619002A7D80 /* garden4.png in Resources */,
+				EAF6A04B16CC8619002A7D80 /* garden5.png in Resources */,
+				EAF6A04E16CC878D002A7D80 /* garden.png in Resources */,
+				EAF6A04F16CC878D002A7D80 /* garden2.png in Resources */,
+				EAF6A05116CC883C002A7D80 /* garden1.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

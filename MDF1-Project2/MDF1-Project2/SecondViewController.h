@@ -11,9 +11,9 @@
 
 @interface SecondViewController : UIViewController
 
--(IBAction)onClick:(id)sender;
+//-(IBAction)onClick:(id)sender;
 
-
+-(IBAction)link;
 
 
 @end

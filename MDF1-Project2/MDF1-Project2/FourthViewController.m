@@ -21,7 +21,7 @@
     if (self)
     {
         self.title = NSLocalizedString(@"Garden Pics", @"Garden Pics");
-        self.tabBarItem.image = [UIImage imageNamed:@"third"];
+        self.tabBarItem.image = [UIImage imageNamed:@"second"];
     }
     return self;
 }
@@ -42,7 +42,7 @@
 {
     [[UIApplication sharedApplication]
      
-     openURL:[NSURL URLWithString:@"http://www.youtube.com/geekylemon"]];
+     openURL:[NSURL URLWithString:@"http://www.veggiegardeningtips.com"]];
 }
 
 -(IBAction)onClick:(id)sender

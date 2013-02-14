@@ -24,8 +24,8 @@
     {
         // Custom initialization
         self.title = NSLocalizedString(@"Squash", @"Squash");
-        self.tabBarItem.image = [UIImage imageNamed:@"third"];
-
+        self.tabBarItem.image = [UIImage imageNamed:@"first"];
+ 
     }
     return self;
 }
@@ -42,6 +42,13 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(IBAction)link
+{
+    [[UIApplication sharedApplication]
+     
+     openURL:[NSURL URLWithString:@"http://www.foodnetwork.com/recipe-collections/spaghetti-squash/index.html"]];
+}
+
 -(IBAction)onClick:(id)sender
 {
 	
@@ -53,7 +60,8 @@
         [self.navigationController pushViewController:thirdView animated:true];
         
     }
-
+    
 }
+
 
 @end
