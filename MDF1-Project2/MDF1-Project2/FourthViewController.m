@@ -14,7 +14,7 @@
 @end
 
 @implementation FourthViewController
-
+// Title and image display on the UITabbar
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -38,6 +38,7 @@
     // Dispose of any resources that can be recreated.
 }
 
+// Link to website
 -(IBAction)link
 {
     [[UIApplication sharedApplication]
@@ -52,7 +53,7 @@
     FourthViewController *fourthView = [[FourthViewController alloc] initWithNibName:@"ThirdView" bundle:nil];
 if (fourthView != nil)
 {
-    // Moves to the second view
+    // Moves to the view
     [self.navigationController pushViewController:fourthView animated:true];
     
 }

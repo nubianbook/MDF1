@@ -1,53 +1,35 @@
 //
 //  AppDelegate.m
-//  MDF1-Project2
+//  MDF1-Project3
 //
-//  Created by Carol Gaylor on 2/11/13.
+//  Created by Carol Gaylor on 2/18/13.
 //  Copyright (c) 2013 Carol Gaylor. All rights reserved.
 //
 
 #import "AppDelegate.h"
 
 #import "FirstViewController.h"
+
 #import "SecondViewController.h"
-#import "ThirdViewController.h"
-#import "FourthViewController.h"
-#import "DetailViewController.h"
-
-@interface AppDelegate()
-
-
-@end
 
 @implementation AppDelegate
 
+- (void)dealloc
+{
+    [_window release];
+    [_tabBarController release];
+    [super dealloc];
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    
+    self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     // Override point for customization after application launch.
-    UIViewController *viewController1 = [[FirstViewController alloc] initWithNibName:@"FirstViewController" bundle:nil];
-    // This is UInav is first pg
-    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:viewController1];
-    
-    UIViewController *viewController2 = [[SecondViewController alloc] initWithNibName:@"SecondViewController" bundle:nil];
-    // This is UInav is second pg
-    UINavigationController *navController1 = [[UINavigationController alloc]initWithRootViewController:viewController2];
-    
-    UIViewController *viewController3 = [[ThirdViewController alloc]
-        initWithNibName:@"ThirdView" bundle:nil];
-    // This is UInav is third pg
-    UINavigationController *navController2 = [[UINavigationController alloc]initWithRootViewController:viewController3];
-    
-    UIViewController *viewController4 = [[FourthViewController alloc] initWithNibName:@"FourthViewController" bundle:nil];
-    // This is UInav is fourth pg
-    UINavigationController *navController3 = [[UINavigationController alloc]initWithRootViewController:viewController4];
-    // Allocating the tabBar
-    self.tabBarController = [[UITabBarController alloc] init];
-    self.tabBarController.viewControllers = [NSArray arrayWithObjects:navController, navController1, navController2, navController3, nil];
+    UIViewController *viewController1 = [[[FirstViewController alloc] initWithNibName:@"FirstViewController" bundle:nil] autorelease];
+    UIViewController *viewController2 = [[[SecondViewController alloc] initWithNibName:@"SecondViewController" bundle:nil] autorelease];
+    self.tabBarController = [[[UITabBarController alloc] init] autorelease];
+    self.tabBarController.viewControllers = @[viewController1, viewController2];
     self.window.rootViewController = self.tabBarController;
-    
     [self.window makeKeyAndVisible];
     return YES;
 }
@@ -78,8 +60,6 @@
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
-
-
 
 /*
 // Optional UITabBarControllerDelegate method.

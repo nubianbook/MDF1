@@ -10,8 +10,10 @@
 
 @interface ThirdViewController : UIViewController
 
+// Action outlet for Button to gallery
 -(IBAction)onClick:(id)sender;
 
+// Link to website
 -(IBAction)link;
 
 

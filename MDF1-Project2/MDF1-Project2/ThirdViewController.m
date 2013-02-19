@@ -17,6 +17,7 @@
 
 @implementation ThirdViewController
 
+// Title and image display on the UITabbar
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -42,6 +43,7 @@
     // Dispose of any resources that can be recreated.
 }
 
+// Link to the website
 -(IBAction)link
 {
     [[UIApplication sharedApplication]
@@ -56,7 +58,7 @@
     ThirdViewController *thirdView = [[ThirdViewController alloc] initWithNibName:@"FourthViewController" bundle:nil];
     if (thirdView != nil)
     {
-        // Moves to the second view
+        // Moves to the view
         [self.navigationController pushViewController:thirdView animated:true];
         
     }

@@ -11,8 +11,8 @@
 
 @interface SecondViewController : UIViewController
 
-//-(IBAction)onClick:(id)sender;
 
+// Link to button on tabview for reciept
 -(IBAction)link;
 
 

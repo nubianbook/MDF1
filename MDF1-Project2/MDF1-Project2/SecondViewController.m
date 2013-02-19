@@ -16,7 +16,7 @@
 
 @implementation SecondViewController
 
-
+// Title and image display on the UITabbar
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -40,6 +40,7 @@
     // Dispose of any resources that can be recreated.
 }
 
+// Button link to website
 -(IBAction)link
 {
     [[UIApplication sharedApplication]
@@ -48,15 +49,5 @@
 }
 
 
-/*-(IBAction)onClick:(id)sender
-{
-    // this creates the secondView controller to make sure it's valid then moves to the next one
-    SecondViewController *secondView = [[SecondViewController alloc] initWithNibName:@"FirstViewController" bundle:nil];
-    if (secondView != nil)
-    {
-        // Moves to the second view
-        [self.navigationController pushViewController:secondView animated:true];
-        
-    }
-}*/
+
 @end

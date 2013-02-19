@@ -13,6 +13,7 @@
 
 @interface FirstViewController : UIViewController <UITableViewDelegate>
 {
+    // Variable: Outlets - Strings - Arrays setup
     IBOutlet UITableView *mytableView;
     NSString *namesArray;
     NSMutableArray *stringArray;
@@ -21,9 +22,10 @@
     NSMutableArray *stringinfoArray;
     NSMutableArray *stringURLArray;
 }
-
+// Button method
 -(IBAction)onClick:(id)sender;
 
+// All of the property setups from my DetailView
 @property (strong, nonatomic) UILabel *detailLabel;
 @property (strong, nonatomic) UILabel *nameLabel;
 @property (retain, nonatomic) UILabel *infoLabel;

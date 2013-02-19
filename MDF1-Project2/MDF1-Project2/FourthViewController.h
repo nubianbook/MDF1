@@ -12,9 +12,10 @@
 {
 
 }
-
+// Action method for button
 -(IBAction)onClick:(id)sender;
 
+// Action for link to website button
 -(IBAction)link;
 
 @end
