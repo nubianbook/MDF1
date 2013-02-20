@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EA03473316D44B3300AC8ECD /* BusinessInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = EA03473216D44B3300AC8ECD /* BusinessInfo.m */; };
+		EA03473716D44B7A00AC8ECD /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EA03473616D44B7A00AC8ECD /* DataManager.m */; };
+		EA03473916D44C5600AC8ECD /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA03473816D44C5600AC8ECD /* CoreLocation.framework */; };
 		EA54438716D2C7C900B5B5BB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA54438616D2C7C900B5B5BB /* UIKit.framework */; };
 		EA54438916D2C7C900B5B5BB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA54438816D2C7C900B5B5BB /* Foundation.framework */; };
 		EA54438B16D2C7C900B5B5BB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA54438A16D2C7C900B5B5BB /* CoreGraphics.framework */; };
@@ -31,6 +34,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EA03473116D44B3300AC8ECD /* BusinessInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusinessInfo.h; sourceTree = "<group>"; };
+		EA03473216D44B3300AC8ECD /* BusinessInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusinessInfo.m; sourceTree = "<group>"; };
+		EA03473516D44B7A00AC8ECD /* DataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataManager.h; sourceTree = "<group>"; };
+		EA03473616D44B7A00AC8ECD /* DataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataManager.m; sourceTree = "<group>"; };
+		EA03473816D44C5600AC8ECD /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		EA54438216D2C7C900B5B5BB /* MDF1-Project3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MDF1-Project3.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA54438616D2C7C900B5B5BB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		EA54438816D2C7C900B5B5BB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -67,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA03473916D44C5600AC8ECD /* CoreLocation.framework in Frameworks */,
 				EA5443BD16D2CB5600B5B5BB /* MapKit.framework in Frameworks */,
 				EA54438716D2C7C900B5B5BB /* UIKit.framework in Frameworks */,
 				EA54438916D2C7C900B5B5BB /* Foundation.framework in Frameworks */,
@@ -97,6 +106,7 @@
 		EA54438516D2C7C900B5B5BB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EA03473816D44C5600AC8ECD /* CoreLocation.framework */,
 				EA5443BC16D2CB5600B5B5BB /* MapKit.framework */,
 				EA54438616D2C7C900B5B5BB /* UIKit.framework */,
 				EA54438816D2C7C900B5B5BB /* Foundation.framework */,
@@ -126,6 +136,10 @@
 				EA5443B916D2C8CC00B5B5BB /* DetailViewController.xib */,
 				EA5443BE16D2E0CF00B5B5BB /* MyMapAnnotation.h */,
 				EA5443BF16D2E0CF00B5B5BB /* MyMapAnnotation.m */,
+				EA03473116D44B3300AC8ECD /* BusinessInfo.h */,
+				EA03473216D44B3300AC8ECD /* BusinessInfo.m */,
+				EA03473516D44B7A00AC8ECD /* DataManager.h */,
+				EA03473616D44B7A00AC8ECD /* DataManager.m */,
 			);
 			path = "MDF1-Project3";
 			sourceTree = "<group>";
@@ -222,6 +236,8 @@
 				EA5443A716D2C7C900B5B5BB /* SecondViewController.m in Sources */,
 				EA5443BA16D2C8CC00B5B5BB /* DetailViewController.m in Sources */,
 				EA5443C016D2E0CF00B5B5BB /* MyMapAnnotation.m in Sources */,
+				EA03473316D44B3300AC8ECD /* BusinessInfo.m in Sources */,
+				EA03473716D44B7A00AC8ECD /* DataManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,6 +360,7 @@
 				EA5443B616D2C7C900B5B5BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

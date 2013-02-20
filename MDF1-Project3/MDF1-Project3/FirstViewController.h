@@ -10,13 +10,14 @@
 #import "Mapkit/Mapkit.h"
 #import "DetailViewController.h"
 
+
 @class MyMapAnnotation;
 
 @interface FirstViewController : UIViewController <UITableViewDelegate>
 {
     IBOutlet UITableView *mytableView;
     NSMutableArray *stringArray;
-    NSMutableArray *stringMapArray;
+    
     
     MyMapAnnotation *title;
     MyMapAnnotation *coord;
@@ -24,7 +25,7 @@
 
 
 @property CLLocationCoordinate2D *coordinate;
-@property (readonly)MKMapView *mapView2;
+@property (strong, nonatomic) IBOutlet MKMapView *mapView2;
 
 
 @end

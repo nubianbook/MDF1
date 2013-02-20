@@ -7,7 +7,16 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "CoreLocation/CoreLocation.h"
 
 @interface BusinessInfo : NSObject
+{
+    NSString *businessName;
+    CLLocationCoordinate2D location;
+}
+
+-(id)initWithName:(NSString*)name loc:(CLLocationCoordinate2D)loc;
+@property (strong, nonatomic) NSString *businessName;
+@property (assign, nonatomic) CLLocationCoordinate2D location;
 
 @end

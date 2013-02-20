@@ -13,7 +13,7 @@
 @end
 
 @implementation DetailViewController
-@synthesize mapView;
+@synthesize mapView, nameString;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -28,6 +28,8 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    
+    NSLog(@"%@", nameString);
 }
 
 - (void)didReceiveMemoryWarning

@@ -19,4 +19,8 @@
 
 @property (strong) IBOutlet MKMapView *mapView;
 
+//Create a property that will hold information from the table view
+@property (strong, nonatomic) NSString *nameString;
+
+
 @end

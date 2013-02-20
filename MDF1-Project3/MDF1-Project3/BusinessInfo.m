@@ -10,4 +10,18 @@
 
 @implementation BusinessInfo
 
+@synthesize businessName;
+@synthesize location;
+
+
+-(id)initWithName:(NSString*)name loc:(CLLocationCoordinate2D)loc
+{
+    if ((self = [super init]))
+    {
+        businessName = name;
+        location = loc;
+    }
+    return self;
+}
+
 @end

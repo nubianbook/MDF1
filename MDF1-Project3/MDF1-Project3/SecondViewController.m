@@ -56,13 +56,13 @@
     hardwareLocation.latitude = 42.2814f;
     hardwareLocation.longitude = -83.3864f;
     
-    CLLocationCoordinate2D discountLocation;
-    discountLocation.latitude = 42.3358f;
-    discountLocation.longitude = -83.3311f;
+    CLLocationCoordinate2D moviesLocation;
+    moviesLocation.latitude = 42.3358f;
+    moviesLocation.longitude = -83.3311f;
     
-    CLLocationCoordinate2D furnitureLocation;
-    furnitureLocation.latitude = 42.2222f;
-    furnitureLocation.longitude = -83.3967f;
+    CLLocationCoordinate2D workoutLocation;
+    workoutLocation.latitude = 42.2222f;
+    workoutLocation.longitude = -83.3967f;
     
     CLLocationCoordinate2D fishLocation;
     fishLocation.latitude = 42.380022f;
@@ -89,8 +89,8 @@
     MyMapAnnotation *annotation = [[MyMapAnnotation alloc] initWithTitle:@"God's House" cood:godshouseLocation];
     MyMapAnnotation *annotation2 = [[MyMapAnnotation alloc] initWithTitle:@"Pizza House" cood:pizzaLocation];
     MyMapAnnotation *annotation3 = [[MyMapAnnotation alloc] initWithTitle:@"Harry's Hardware" cood:hardwareLocation];
-    MyMapAnnotation *annotation4 = [[MyMapAnnotation alloc] initWithTitle:@"Big Discount" cood:discountLocation];
-    MyMapAnnotation *annotation5 = [[MyMapAnnotation alloc] initWithTitle:@"Furniture Store" cood:furnitureLocation];
+    MyMapAnnotation *annotation4 = [[MyMapAnnotation alloc] initWithTitle:@"WorkOut Station " cood:workoutLocation];
+    MyMapAnnotation *annotation5 = [[MyMapAnnotation alloc] initWithTitle:@"The Movies" cood:moviesLocation];
     MyMapAnnotation *annotation6 = [[MyMapAnnotation alloc] initWithTitle:@"The Fish Bowl" cood:fishLocation];
     MyMapAnnotation *annotation7 = [[MyMapAnnotation alloc] initWithTitle:@"EZ Taxes" cood:taxesLocation];
     MyMapAnnotation *annotation8 = [[MyMapAnnotation alloc] initWithTitle:@"Grocery Store" cood:groceryLocation];
@@ -98,6 +98,8 @@
     MyMapAnnotation *annotation10 = [[MyMapAnnotation alloc] initWithTitle:@"Book Store" cood:booksLocation];
     
     [mapView2 addAnnotations:[NSArray arrayWithObjects:annotation, annotation2, annotation3, annotation4, annotation5, annotation6, annotation7, annotation8, annotation9, annotation10, nil]];
+    mapView2.centerCoordinate = CLLocationCoordinate2DMake(0.02, 0.02);
+    
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }

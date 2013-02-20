@@ -18,7 +18,7 @@
 -(id)initWithTitle:(NSString*)text cood:(CLLocationCoordinate2D)coord;
 
 @property (nonatomic, copy) NSString *title;
-@property (nonatomic, readonly) CLLocationCoordinate2D coordinate;
+@property (nonatomic, assign) CLLocationCoordinate2D coordinate;
 
 
 @end
