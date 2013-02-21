@@ -16,9 +16,6 @@
 		EA54439116D2C7C900B5B5BB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EA54438F16D2C7C900B5B5BB /* InfoPlist.strings */; };
 		EA54439316D2C7C900B5B5BB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EA54439216D2C7C900B5B5BB /* main.m */; };
 		EA54439716D2C7C900B5B5BB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EA54439616D2C7C900B5B5BB /* AppDelegate.m */; };
-		EA54439916D2C7C900B5B5BB /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = EA54439816D2C7C900B5B5BB /* Default.png */; };
-		EA54439B16D2C7C900B5B5BB /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA54439A16D2C7C900B5B5BB /* Default@2x.png */; };
-		EA54439D16D2C7C900B5B5BB /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA54439C16D2C7C900B5B5BB /* Default-568h@2x.png */; };
 		EA5443A016D2C7C900B5B5BB /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA54439F16D2C7C900B5B5BB /* FirstViewController.m */; };
 		EA5443A216D2C7C900B5B5BB /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = EA5443A116D2C7C900B5B5BB /* first.png */; };
 		EA5443A416D2C7C900B5B5BB /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA5443A316D2C7C900B5B5BB /* first@2x.png */; };
@@ -31,6 +28,11 @@
 		EA5443BB16D2C8CC00B5B5BB /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA5443B916D2C8CC00B5B5BB /* DetailViewController.xib */; };
 		EA5443BD16D2CB5600B5B5BB /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA5443BC16D2CB5600B5B5BB /* MapKit.framework */; };
 		EA5443C016D2E0CF00B5B5BB /* MyMapAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = EA5443BF16D2E0CF00B5B5BB /* MyMapAnnotation.m */; };
+		EAA7635A16D6E3DD0082B8CA /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = EAA7635516D6E3DD0082B8CA /* icon.png */; };
+		EAA7635B16D6E3DD0082B8CA /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EAA7635616D6E3DD0082B8CA /* icon@2x.png */; };
+		EAA7636416D6E5210082B8CA /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EAA7636316D6E5210082B8CA /* Default@2x.png */; };
+		EAA7636616D6E52F0082B8CA /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EAA7636516D6E52F0082B8CA /* Default-568h@2x.png */; };
+		EAA7636C16D6E6E00082B8CA /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = EAA7636B16D6E6DF0082B8CA /* Default.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,9 +51,6 @@
 		EA54439416D2C7C900B5B5BB /* MDF1-Project3-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MDF1-Project3-Prefix.pch"; sourceTree = "<group>"; };
 		EA54439516D2C7C900B5B5BB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		EA54439616D2C7C900B5B5BB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		EA54439816D2C7C900B5B5BB /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		EA54439A16D2C7C900B5B5BB /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		EA54439C16D2C7C900B5B5BB /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		EA54439E16D2C7C900B5B5BB /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
 		EA54439F16D2C7C900B5B5BB /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
 		EA5443A116D2C7C900B5B5BB /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
@@ -68,6 +67,11 @@
 		EA5443BC16D2CB5600B5B5BB /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		EA5443BE16D2E0CF00B5B5BB /* MyMapAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyMapAnnotation.h; sourceTree = "<group>"; };
 		EA5443BF16D2E0CF00B5B5BB /* MyMapAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyMapAnnotation.m; sourceTree = "<group>"; };
+		EAA7635516D6E3DD0082B8CA /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = ../../../images/project3/project3_2/icon.png; sourceTree = "<group>"; };
+		EAA7635616D6E3DD0082B8CA /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon@2x.png"; path = "../../../images/project3/project3_2/icon@2x.png"; sourceTree = "<group>"; };
+		EAA7636316D6E5210082B8CA /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "../Default@2x.png"; sourceTree = "<group>"; };
+		EAA7636516D6E52F0082B8CA /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../Default-568h@2x.png"; sourceTree = "<group>"; };
+		EAA7636B16D6E6DF0082B8CA /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = ../Default.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,13 +151,15 @@
 		EA54438D16D2C7C900B5B5BB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				EAA7636516D6E52F0082B8CA /* Default-568h@2x.png */,
+				EAA7636316D6E5210082B8CA /* Default@2x.png */,
+				EAA7636B16D6E6DF0082B8CA /* Default.png */,
+				EAA7635516D6E3DD0082B8CA /* icon.png */,
+				EAA7635616D6E3DD0082B8CA /* icon@2x.png */,
 				EA54438E16D2C7C900B5B5BB /* MDF1-Project3-Info.plist */,
 				EA54438F16D2C7C900B5B5BB /* InfoPlist.strings */,
 				EA54439216D2C7C900B5B5BB /* main.m */,
 				EA54439416D2C7C900B5B5BB /* MDF1-Project3-Prefix.pch */,
-				EA54439816D2C7C900B5B5BB /* Default.png */,
-				EA54439A16D2C7C900B5B5BB /* Default@2x.png */,
-				EA54439C16D2C7C900B5B5BB /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -210,9 +216,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA54439116D2C7C900B5B5BB /* InfoPlist.strings in Resources */,
-				EA54439916D2C7C900B5B5BB /* Default.png in Resources */,
-				EA54439B16D2C7C900B5B5BB /* Default@2x.png in Resources */,
-				EA54439D16D2C7C900B5B5BB /* Default-568h@2x.png in Resources */,
 				EA5443A216D2C7C900B5B5BB /* first.png in Resources */,
 				EA5443A416D2C7C900B5B5BB /* first@2x.png in Resources */,
 				EA5443A916D2C7C900B5B5BB /* second.png in Resources */,
@@ -220,6 +223,11 @@
 				EA5443AE16D2C7C900B5B5BB /* FirstViewController.xib in Resources */,
 				EA5443B116D2C7C900B5B5BB /* SecondViewController.xib in Resources */,
 				EA5443BB16D2C8CC00B5B5BB /* DetailViewController.xib in Resources */,
+				EAA7635A16D6E3DD0082B8CA /* icon.png in Resources */,
+				EAA7635B16D6E3DD0082B8CA /* icon@2x.png in Resources */,
+				EAA7636416D6E5210082B8CA /* Default@2x.png in Resources */,
+				EAA7636616D6E52F0082B8CA /* Default-568h@2x.png in Resources */,
+				EAA7636C16D6E6E00082B8CA /* Default.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
