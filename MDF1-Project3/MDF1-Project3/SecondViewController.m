@@ -118,6 +118,7 @@
     
     NSMutableArray *data = dataManager.businesses;
     
+    
     for (int x = 0; x < [data count]; x++)
     {
         MyMapAnnotation *mapAnnotation = [[MyMapAnnotation alloc] initWithTitle:[[data objectAtIndex:x] businessName] cood:[[data objectAtIndex:x] theLocation]];

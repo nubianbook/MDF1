@@ -83,7 +83,13 @@
 // tableview - number of rows in section
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return [stringArray count];
+    DataManager *dataManager = [DataManager shareDataManager];
+    
+    NSMutableArray *array = dataManager.businesses;
+    
+    
+    
+    return [array count];
     
 }
 
@@ -100,7 +106,13 @@
     
    static int count = 0;
     
-    cell.textLabel.text = (NSString *)[stringArray objectAtIndex:indexPath.row];
+    //Instead of using string array, create an instance of the data manager, create a mutable array to hold the array inside data manager, set instead of string array, use the array you just created
+    
+    DataManager *dataManager = [DataManager shareDataManager];
+    
+    NSMutableArray *dataArray = dataManager.businesses;
+    
+    cell.textLabel.text = [[dataArray objectAtIndex:indexPath.row] businessName];
     
     count++;
     return cell;
@@ -112,11 +124,19 @@
     
     DetailViewController *myDetailController = [[DetailViewController alloc] initWithNibName:@"DetailViewController" bundle:nil];
     
+    DataManager *dataManager = [DataManager shareDataManager];
+    
+    NSMutableArray *array = dataManager.businesses;
     
     if (myDetailController != nil)
     {
         //Grabs the property that we set in the DetailViewController, and gives that property a value.  The value is the object in stringArray that matches the cell that I clicked.
         BusinessInfo *info = [[DataManager shareDataManager].businesses objectAtIndex:indexPath.row];
+        
+        myDetailController.nameOfBusiness = [[array objectAtIndex:indexPath.row] businessName];
+        
+        myDetailController.locationOfBusiness = [[array objectAtIndex:indexPath.row] theLocation];
+        
         [self presentViewController:myDetailController animated:true completion:nil];
         myDetailController.info = info;
     }
@@ -144,13 +164,8 @@
         
         NSLog(@"%d", businessesArray.count);
         [businessesArray removeObjectAtIndex:indexPath.row];
-        
         NSLog(@"%d", businessesArray.count);
-        [mytableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:true];
-        
-        
-        
-        
+        [mytableView deleteRowsAtIndexPaths:[NSMutableArray arrayWithObject:indexPath] withRowAnimation:true];
         
         
     }
