@@ -12,6 +12,8 @@
 
 @synthesize businesses;
 
+
+
 static DataManager* _shareDataManager = nil;
 
 +(DataManager*)shareDataManager
@@ -28,6 +30,7 @@ static DataManager* _shareDataManager = nil;
     if ((self = [super init]))
     {
         businesses = [[NSMutableArray alloc] init];
+        
     }
     return self;
 }

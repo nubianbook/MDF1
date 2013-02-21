@@ -9,13 +9,22 @@
 #import "SecondViewController.h"
 #import "MapKit/MapKit.h"
 #import "MyMapAnnotation.h"
+#import "BusinessInfo.h"
+#import "DataManager.h"
+
 
 @interface SecondViewController ()
 
 @end
 
-
 @implementation SecondViewController
+
+@synthesize businessesArray;
+@synthesize place;
+@synthesize locationArray;
+@synthesize annotationArray;
+@synthesize mapView2;
+
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -43,8 +52,10 @@
     region.span = span;
     mapView2.region = region;
     
+   
+    
     // Here I am creating the variable for my instance
-    CLLocationCoordinate2D godshouseLocation;
+   /* CLLocationCoordinate2D godshouseLocation;
     godshouseLocation.latitude = 42.3242f;
     godshouseLocation.longitude = -83.4003f;
     
@@ -97,11 +108,53 @@
     MyMapAnnotation *annotation9 = [[MyMapAnnotation alloc] initWithTitle:@"Go Cheap Gas" cood:gasLocation];
     MyMapAnnotation *annotation10 = [[MyMapAnnotation alloc] initWithTitle:@"Book Store" cood:booksLocation];
     
-    [mapView2 addAnnotations:[NSArray arrayWithObjects:annotation, annotation2, annotation3, annotation4, annotation5, annotation6, annotation7, annotation8, annotation9, annotation10, nil]];
-    mapView2.centerCoordinate = CLLocationCoordinate2DMake(0.02, 0.02);
+    [mapView2 addAnnotations:[NSArray arrayWithObjects:annotation, annotation2, annotation3, annotation4, annotation5, annotation6, annotation7, annotation8, annotation9, annotation10, nil]];*/
+    
+    [mapView2 setRegion:region animated:true];
+    
+    //[mapView2 removeAnnotations:mapView2.annotations];
+    
+    DataManager *dataManager = [DataManager shareDataManager];
+    
+    NSMutableArray *data = dataManager.businesses;
+    
+    for (int x = 0; x < [data count]; x++)
+    {
+        MyMapAnnotation *mapAnnotation = [[MyMapAnnotation alloc] initWithTitle:[[data objectAtIndex:x] businessName] cood:[[data objectAtIndex:x] theLocation]];
+        
+        
+        if (mapAnnotation != nil)
+        {
+            [mapView2 addAnnotation:mapAnnotation];
+        }
+    }
+    
     
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [mapView2 removeAnnotations:mapView2.annotations];
+    
+    
+    DataManager *dataManager = [DataManager shareDataManager];
+    
+    NSMutableArray *data = dataManager.businesses;
+    
+    for (int x = 0; x < [data count]; x++)
+    {
+        MyMapAnnotation *mapAnnotation = [[MyMapAnnotation alloc] initWithTitle:[[data objectAtIndex:x] businessName] cood:[[data objectAtIndex:x] theLocation]];
+        
+        
+        if (mapAnnotation != nil)
+        {
+            [mapView2 addAnnotation:mapAnnotation];
+        }
+    }
+
+    
 }
 
 - (void)didReceiveMemoryWarning

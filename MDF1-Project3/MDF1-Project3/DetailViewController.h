@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "Mapkit/Mapkit.h"
+#import "BusinessInfo.h"
 
 @interface DetailViewController : UIViewController
 {
@@ -21,6 +22,7 @@
 
 //Create a property that will hold information from the table view
 @property (strong, nonatomic) NSString *nameString;
+@property (nonatomic, retain) BusinessInfo *info;
 
 
 @end

@@ -12,11 +12,11 @@
 @interface BusinessInfo : NSObject
 {
     NSString *businessName;
-    CLLocationCoordinate2D location;
+    CLLocationCoordinate2D theLocation;
 }
 
 -(id)initWithName:(NSString*)name loc:(CLLocationCoordinate2D)loc;
 @property (strong, nonatomic) NSString *businessName;
-@property (assign, nonatomic) CLLocationCoordinate2D location;
+@property (assign, nonatomic) CLLocationCoordinate2D theLocation;
 
 @end

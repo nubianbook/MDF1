@@ -98,11 +98,9 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
     
-    static int count = 0;
+   static int count = 0;
     
     cell.textLabel.text = (NSString *)[stringArray objectAtIndex:indexPath.row];
-    
-    
     
     count++;
     return cell;
@@ -117,10 +115,67 @@
     
     if (myDetailController != nil)
     {
-        //Grabs the property that we set in the DetailViewController, and gives that property a value.  The value is the object in stringArray that matches the cell that you clicked.
-        
+        //Grabs the property that we set in the DetailViewController, and gives that property a value.  The value is the object in stringArray that matches the cell that I clicked.
+        BusinessInfo *info = [[DataManager shareDataManager].businesses objectAtIndex:indexPath.row];
         [self presentViewController:myDetailController animated:true completion:nil];
+        myDetailController.info = info;
+    }
+}
+
+
+-(UITableViewCellEditingStyle)tableView:(UITableView *)tableView editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return UITableViewCellEditingStyleDelete;
+}
+
+
+
+-(void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (editingStyle == UITableViewCellEditingStyleDelete)
+    {
+        // This code is delete mode
+        NSLog(@"we want to delete row=%d", indexPath.row);
+        // Removes the object from the data array
         
+        DataManager *dataManager = [DataManager shareDataManager];
+        
+        NSMutableArray *businessesArray = dataManager.businesses;
+        
+        NSLog(@"%d", businessesArray.count);
+        [businessesArray removeObjectAtIndex:indexPath.row];
+        
+        NSLog(@"%d", businessesArray.count);
+        [mytableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:true];
+        
+        
+        
+        
+        
+        
+    }
+    //Creates an instance of the singleton
+    //DataManager *dataManager = [DataManager shareDataManager];
+    
+    //Houses the array in the singleton in an array we can work with here
+    //NSMutableArray *businessArray = dataManager.businesses;
+    
+    //Removes the object at the path of indexpath.row, which is the index.
+    //[businessArray removeObjectAtIndex:indexPath.row];
+    
+    //Removes the cell from the table
+    //[mytableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:false];
+}
+
+-(IBAction)deleteOnClick:(id)sender
+{
+    if ([deleteButton.titleLabel.text isEqual:@"Delete"])
+    {
+        [mytableView setEditing:true];
+        [deleteButton setTitle:@"Clear" forState:UIControlStateNormal];
+    } else {
+        [deleteButton setTitle:@"Delete" forState:UIControlStateNormal];
+        [mytableView setEditing:false];
     }
 }
 

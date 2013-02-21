@@ -13,9 +13,10 @@
 
 @class MyMapAnnotation;
 
-@interface FirstViewController : UIViewController <UITableViewDelegate>
+@interface FirstViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 {
     IBOutlet UITableView *mytableView;
+    IBOutlet UIButton *deleteButton;
     NSMutableArray *stringArray;
     
     
@@ -23,7 +24,7 @@
     MyMapAnnotation *coord;
 }
 
-
+-(IBAction)deleteOnClick:(id)sender;
 @property CLLocationCoordinate2D *coordinate;
 @property (strong, nonatomic) IBOutlet MKMapView *mapView2;
 

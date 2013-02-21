@@ -11,7 +11,7 @@
 @implementation BusinessInfo
 
 @synthesize businessName;
-@synthesize location;
+@synthesize theLocation;
 
 
 -(id)initWithName:(NSString*)name loc:(CLLocationCoordinate2D)loc
@@ -19,7 +19,7 @@
     if ((self = [super init]))
     {
         businessName = name;
-        location = loc;
+        theLocation = loc;
     }
     return self;
 }

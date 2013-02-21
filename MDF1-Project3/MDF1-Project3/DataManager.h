@@ -11,10 +11,10 @@
 @interface DataManager : NSObject
 {
     NSMutableArray *businesses;
+    
 }
 
 +(DataManager*)shareDataManager;
 
 @property (nonatomic, strong) NSMutableArray *businesses;
-
 @end
