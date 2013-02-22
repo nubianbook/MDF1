@@ -9,10 +9,11 @@
 #import "MyMapAnnotation.h"
 
 @implementation MyMapAnnotation
-
+// sync my properties
 @synthesize title;
 @synthesize coordinate;
 
+// setting the details for my map display 
 -(id)initWithTitle:(NSString*)text cood:(CLLocationCoordinate2D)coord
 {
     if ((self = [super init]))

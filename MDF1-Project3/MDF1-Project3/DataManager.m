@@ -9,11 +9,11 @@
 #import "DataManager.h"
 
 @implementation DataManager
-
+// sync the property 
 @synthesize businesses;
 
 
-
+// setting up the conditions for which my singular will operate
 static DataManager* _shareDataManager = nil;
 
 +(DataManager*)shareDataManager

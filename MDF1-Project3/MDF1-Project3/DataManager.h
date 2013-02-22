@@ -10,11 +10,12 @@
 
 @interface DataManager : NSObject
 {
+    // this is the array for my singular datamanager file
     NSMutableArray *businesses;
     
 }
-
+// creating a static method for my singular to attach to
 +(DataManager*)shareDataManager;
-
+// creating the property array for businesses
 @property (nonatomic, strong) NSMutableArray *businesses;
 @end

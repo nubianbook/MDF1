@@ -38,12 +38,7 @@
     span.latitudeDelta = 0.2f;
     span.longitudeDelta = 0.2f;
     // this group sets my lat and long that I want my map centered on
-    /*
-    CLLocationCoordinate2D location;
-    location.latitude = 42.3242f;
-    location.longitude = -83.4003f;
-     */
-    // this is the area the pulls all the previous details together and set in the mapView
+        // this is the area the pulls all the previous details together and set in the mapView
     MKCoordinateRegion region;
     region.center = locationOfBusiness;
     region.span = span;

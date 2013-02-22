@@ -13,6 +13,7 @@
 
 @interface SecondViewController : UIViewController
 {
+    // This is my outlets - strings
     IBOutlet MKMapView *mapView2;
     NSString *place;
     NSString *locationArray;
@@ -20,8 +21,7 @@
     MyMapAnnotation *annotation;
 }
 
-
-@property (retain) NSString *place;
+// coordinate properties for my arrays
 @property (assign) NSString *locationArray;
 @property (assign)NSMutableArray *annotationArray;
 @property (nonatomic, strong) NSMutableArray *businessesArray;

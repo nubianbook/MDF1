@@ -6,7 +6,7 @@
 //  Copyright (c) 2013 Carol Gaylor. All rights reserved.
 //
 
-
+// pulling in all the files needed to process code
 #import "Mapkit/Mapkit.h"
 #import "MyMapAnnotation.h"
 #import "BusinessInfo.h"
@@ -21,7 +21,7 @@
 
 @implementation FirstViewController
 
-
+// sync properties from my header file
 @synthesize coordinate;
 @synthesize mapView2;
 
@@ -34,7 +34,7 @@
     }
     return self;
 }
-							
+	// my business info and coordinates
 - (void)viewDidLoad
 {
     BusinessInfo *info = [[BusinessInfo alloc] initWithName:@"God's House" loc:CLLocationCoordinate2DMake(42.3242f, -83.4003f)];
@@ -106,7 +106,7 @@
     
    static int count = 0;
     
-    //Instead of using string array, create an instance of the data manager, create a mutable array to hold the array inside data manager, set instead of string array, use the array you just created
+    //Instead of using string array, create an instance of the data manager, create a mutable array to hold the array inside data manager, set instead of string array, use the array just created
     
     DataManager *dataManager = [DataManager shareDataManager];
     
@@ -117,7 +117,7 @@
     count++;
     return cell;
 }
-
+    // Here is for what happens when one of the cells on tableview is selected
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     NSLog(@"row=%d", indexPath.row);
@@ -130,7 +130,7 @@
     
     if (myDetailController != nil)
     {
-        //Grabs the property that we set in the DetailViewController, and gives that property a value.  The value is the object in stringArray that matches the cell that I clicked.
+        //Grabs the property that set in the DetailViewController, and gives that property a value.  The value is the object in stringArray that matches the cell that I clicked.
         BusinessInfo *info = [[DataManager shareDataManager].businesses objectAtIndex:indexPath.row];
         
         myDetailController.nameOfBusiness = [[array objectAtIndex:indexPath.row] businessName];
@@ -142,14 +142,14 @@
     }
 }
 
-
+    // this is to assist in the delete function
 -(UITableViewCellEditingStyle)tableView:(UITableView *)tableView editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     return UITableViewCellEditingStyleDelete;
 }
 
 
-
+    // This area is also assisting in deleting from my tableview as well as from my all the business view
 -(void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if (editingStyle == UITableViewCellEditingStyleDelete)
@@ -167,21 +167,9 @@
         NSLog(@"%d", businessesArray.count);
         [mytableView deleteRowsAtIndexPaths:[NSMutableArray arrayWithObject:indexPath] withRowAnimation:true];
         
-        
     }
-    //Creates an instance of the singleton
-    //DataManager *dataManager = [DataManager shareDataManager];
-    
-    //Houses the array in the singleton in an array we can work with here
-    //NSMutableArray *businessArray = dataManager.businesses;
-    
-    //Removes the object at the path of indexpath.row, which is the index.
-    //[businessArray removeObjectAtIndex:indexPath.row];
-    
-    //Removes the cell from the table
-    //[mytableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:false];
 }
-
+    // This area is giving the button it's appearance and functionality
 -(IBAction)deleteOnClick:(id)sender
 {
     if ([deleteButton.titleLabel.text isEqual:@"Delete"])

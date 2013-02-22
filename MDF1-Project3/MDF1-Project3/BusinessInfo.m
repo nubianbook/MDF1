@@ -9,11 +9,11 @@
 #import "BusinessInfo.h"
 
 @implementation BusinessInfo
-
+// sync the properties
 @synthesize businessName;
 @synthesize theLocation;
 
-
+// setting this method for display
 -(id)initWithName:(NSString*)name loc:(CLLocationCoordinate2D)loc
 {
     if ((self = [super init]))
