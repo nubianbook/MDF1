@@ -6,6 +6,7 @@
 //  Copyright (c) 2013 Carol Gaylor. All rights reserved.
 //
 
+// pulling in the second view and the DataManager singalton 
 #import "SecondViewController.h"
 #import "DataManager.h"
 
@@ -34,6 +35,7 @@
 
 -(void)viewDidAppear:(BOOL)animated
 {
+    // setting up the details for the XML information that is parsed to be displayed
     DataManager *manager = [DataManager shareDataManager];
     NSMutableData *someData = manager.dataStore;
     

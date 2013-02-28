@@ -15,6 +15,7 @@
 
 @implementation DetailViewController
 
+// sync properties from my header file
 @synthesize theCity;
 @synthesize theAddress;
 @synthesize theEmail;
@@ -31,6 +32,7 @@
 
 - (void)viewDidLoad
 {
+    // establishing my string info to populate the second view on the UItableview
     NSString *formattedInformation = [NSString stringWithFormat:@"%@ %@ %@", theAddress, theCity, theEmail];
     
     detailTextView.text = formattedInformation;

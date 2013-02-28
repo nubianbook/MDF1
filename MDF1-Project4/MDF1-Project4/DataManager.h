@@ -10,15 +10,18 @@
 
 @interface DataManager : NSObject
 {
+    // my main singalton variables
     NSMutableData *dataStore;
     NSMutableArray *myArray;
     NSString *cityName;
 }
 
+// singalton properties
 @property NSMutableData *dataStore;
 @property NSMutableArray *myArray;
 @property NSString *cityName;
 
+// my static method
 +(DataManager*)shareDataManager;
 
 @end

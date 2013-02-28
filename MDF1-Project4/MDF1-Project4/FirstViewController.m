@@ -6,6 +6,7 @@
 //  Copyright (c) 2013 Carol Gaylor. All rights reserved.
 //
 
+// pulling in all the files needed to process code
 #import "FirstViewController.h"
 #import "DataManager.h"
 #import "Wine.h"
@@ -31,9 +32,10 @@
 							
 - (void)viewDidLoad
 {
+    // this is th count variable to help shorten the list
     counterInt = 0;
     
-    // create url
+    // creating the from the web service url
     url = [[NSURL alloc] initWithString:@"http://www.barnivore.com/wine.xml"];
     
     request = [[NSURLRequest alloc] initWithURL:url];
@@ -47,7 +49,7 @@
 	// Do any additional setup after loading the view, typically from a nib.
    
 }
-
+    // Making the url connection
 - (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data
 {
     // check if data is valid
@@ -73,7 +75,7 @@
         [xmlParser parse];
     }
 }
-
+    // identifying the contents to be parsed and string
 -(void)parser:(NSXMLParser *)parser foundCharacters:(NSString *)string
 {
     if (!currentValue)
@@ -83,7 +85,7 @@
         [currentValue appendString:string];
     }
 }
-
+// Starting the parse procedure 
 - (void)parser:(NSXMLParser *)parser didStartElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName attributes:(NSDictionary *)attributeDict
 {
     if (counterInt <= 10)
@@ -99,7 +101,7 @@
     }
     
 }
-
+    // implementing and pulling the parsed info
 -(void)parser:(NSXMLParser *)parser didEndElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName
 {
     if (counterInt <= 10)
@@ -154,7 +156,7 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
+ // tableview - number of rows in section
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     DataManager *manager = [DataManager shareDataManager];
@@ -185,7 +187,7 @@
     return cell;
     
 }
-
+// Here is what happens when one of the cells on tableview is selected
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     

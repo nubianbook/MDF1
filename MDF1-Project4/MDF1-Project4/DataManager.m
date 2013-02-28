@@ -6,14 +6,17 @@
 //  Copyright (c) 2013 Carol Gaylor. All rights reserved.
 //
 
+// pulling in the data manager 
 #import "DataManager.h"
 
 @implementation DataManager
 
+// sync properties from my header file
 @synthesize dataStore;
 @synthesize myArray;
 @synthesize cityName;
 
+// implementing the static method
 static DataManager* _shareDataManager = nil;
 
 +(DataManager*)shareDataManager
@@ -25,6 +28,7 @@ static DataManager* _shareDataManager = nil;
     return _shareDataManager;
 }
 
+// establishing my container that maintains the XML info
 -(id)init
 {
     if ((self = [super init]))
