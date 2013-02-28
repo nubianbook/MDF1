@@ -110,7 +110,7 @@
     if ([elementName isEqualToString:@"company-name"])
     {
         [myWine setValue:currentValue forKey:@"companyName"];
-        currentValue = nil;
+        //currentValue = nil;
     }
     if ([elementName isEqualToString:@"city"])
     {
@@ -135,6 +135,7 @@
         NSLog(@"%d", array.count);
         counterInt ++;
     }
+        currentValue = nil;
     }
     
 }
