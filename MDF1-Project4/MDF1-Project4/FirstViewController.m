@@ -23,7 +23,7 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        self.title = NSLocalizedString(@"Places", @"Places");
+        self.title = NSLocalizedString(@"Places open very slow", @"Places open very slow");
         self.tabBarItem.image = [UIImage imageNamed:@"first"];
     }
     return self;
@@ -178,7 +178,7 @@
     NSMutableArray *array = manager.myArray;
     cell.textLabel.text = [[array objectAtIndex:indexPath.row] companyName];
     
-    cell.textLabel.font = [UIFont systemFontOfSize:12.0f];
+    cell.textLabel.font = [UIFont systemFontOfSize:16.0f];
   
     //count++;
     return cell;

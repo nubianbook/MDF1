@@ -13,9 +13,6 @@
 		EA132FEA16D9D603006FF5F7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EA132FE816D9D603006FF5F7 /* InfoPlist.strings */; };
 		EA132FEC16D9D603006FF5F7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EA132FEB16D9D603006FF5F7 /* main.m */; };
 		EA132FF016D9D603006FF5F7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EA132FEF16D9D603006FF5F7 /* AppDelegate.m */; };
-		EA132FF216D9D603006FF5F7 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = EA132FF116D9D603006FF5F7 /* Default.png */; };
-		EA132FF416D9D603006FF5F7 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA132FF316D9D603006FF5F7 /* Default@2x.png */; };
-		EA132FF616D9D603006FF5F7 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA132FF516D9D603006FF5F7 /* Default-568h@2x.png */; };
 		EA132FF916D9D603006FF5F7 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA132FF816D9D603006FF5F7 /* FirstViewController.m */; };
 		EA132FFB16D9D603006FF5F7 /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = EA132FFA16D9D603006FF5F7 /* first.png */; };
 		EA132FFD16D9D603006FF5F7 /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA132FFC16D9D603006FF5F7 /* first@2x.png */; };
@@ -26,6 +23,11 @@
 		EA13300A16D9D604006FF5F7 /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA13300816D9D604006FF5F7 /* SecondViewController.xib */; };
 		EA13301D16D9DA73006FF5F7 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA13301B16D9DA73006FF5F7 /* DetailViewController.m */; };
 		EA13301E16D9DA73006FF5F7 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA13301C16D9DA73006FF5F7 /* DetailViewController.xib */; };
+		EA8D98FF16DF99AD006EF8E3 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = EA8D98FE16DF99AD006EF8E3 /* icon.png */; };
+		EA8D990216DF99B4006EF8E3 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA8D990116DF99B4006EF8E3 /* icon@2x.png */; };
+		EA8D990616DF9A03006EF8E3 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA8D990516DF9A03006EF8E3 /* Default@2x.png */; };
+		EA8D990816DF9A15006EF8E3 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA8D990716DF9A15006EF8E3 /* Default-568h@2x.png */; };
+		EA8D990A16DF9A5D006EF8E3 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = EA8D990916DF9A5D006EF8E3 /* Default.png */; };
 		EAA4924716DDCDE500744369 /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EAA4924616DDCDE500744369 /* DataManager.m */; };
 		EAA4924F16DDE97400744369 /* Wine.m in Sources */ = {isa = PBXBuildFile; fileRef = EAA4924E16DDE97400744369 /* Wine.m */; };
 /* End PBXBuildFile section */
@@ -41,9 +43,6 @@
 		EA132FED16D9D603006FF5F7 /* MDF1-Project4-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MDF1-Project4-Prefix.pch"; sourceTree = "<group>"; };
 		EA132FEE16D9D603006FF5F7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		EA132FEF16D9D603006FF5F7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		EA132FF116D9D603006FF5F7 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		EA132FF316D9D603006FF5F7 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		EA132FF516D9D603006FF5F7 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		EA132FF716D9D603006FF5F7 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
 		EA132FF816D9D603006FF5F7 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
 		EA132FFA16D9D603006FF5F7 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
@@ -57,6 +56,11 @@
 		EA13301A16D9DA73006FF5F7 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		EA13301B16D9DA73006FF5F7 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		EA13301C16D9DA73006FF5F7 /* DetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
+		EA8D98FE16DF99AD006EF8E3 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = ../icon.png; sourceTree = "<group>"; };
+		EA8D990116DF99B4006EF8E3 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon@2x.png"; path = "../icon@2x.png"; sourceTree = "<group>"; };
+		EA8D990516DF9A03006EF8E3 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "../Default@2x.png"; sourceTree = "<group>"; };
+		EA8D990716DF9A15006EF8E3 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../Default-568h@2x.png"; sourceTree = "<group>"; };
+		EA8D990916DF9A5D006EF8E3 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = ../Default.png; sourceTree = "<group>"; };
 		EAA4924516DDCDE500744369 /* DataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataManager.h; sourceTree = "<group>"; };
 		EAA4924616DDCDE500744369 /* DataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataManager.m; sourceTree = "<group>"; };
 		EAA4924D16DDE97400744369 /* Wine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Wine.h; sourceTree = "<group>"; };
@@ -107,6 +111,11 @@
 		EA132FE516D9D603006FF5F7 /* MDF1-Project4 */ = {
 			isa = PBXGroup;
 			children = (
+				EA8D990916DF9A5D006EF8E3 /* Default.png */,
+				EA8D990716DF9A15006EF8E3 /* Default-568h@2x.png */,
+				EA8D990516DF9A03006EF8E3 /* Default@2x.png */,
+				EA8D990116DF99B4006EF8E3 /* icon@2x.png */,
+				EA8D98FE16DF99AD006EF8E3 /* icon.png */,
 				EA132FEE16D9D603006FF5F7 /* AppDelegate.h */,
 				EA132FEF16D9D603006FF5F7 /* AppDelegate.m */,
 				EA132FF716D9D603006FF5F7 /* FirstViewController.h */,
@@ -138,9 +147,6 @@
 				EA132FE816D9D603006FF5F7 /* InfoPlist.strings */,
 				EA132FEB16D9D603006FF5F7 /* main.m */,
 				EA132FED16D9D603006FF5F7 /* MDF1-Project4-Prefix.pch */,
-				EA132FF116D9D603006FF5F7 /* Default.png */,
-				EA132FF316D9D603006FF5F7 /* Default@2x.png */,
-				EA132FF516D9D603006FF5F7 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -197,9 +203,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA132FEA16D9D603006FF5F7 /* InfoPlist.strings in Resources */,
-				EA132FF216D9D603006FF5F7 /* Default.png in Resources */,
-				EA132FF416D9D603006FF5F7 /* Default@2x.png in Resources */,
-				EA132FF616D9D603006FF5F7 /* Default-568h@2x.png in Resources */,
 				EA132FFB16D9D603006FF5F7 /* first.png in Resources */,
 				EA132FFD16D9D603006FF5F7 /* first@2x.png in Resources */,
 				EA13300216D9D603006FF5F7 /* second.png in Resources */,
@@ -207,6 +210,11 @@
 				EA13300716D9D604006FF5F7 /* FirstViewController.xib in Resources */,
 				EA13300A16D9D604006FF5F7 /* SecondViewController.xib in Resources */,
 				EA13301E16D9DA73006FF5F7 /* DetailViewController.xib in Resources */,
+				EA8D98FF16DF99AD006EF8E3 /* icon.png in Resources */,
+				EA8D990216DF99B4006EF8E3 /* icon@2x.png in Resources */,
+				EA8D990616DF9A03006EF8E3 /* Default@2x.png in Resources */,
+				EA8D990816DF9A15006EF8E3 /* Default-568h@2x.png in Resources */,
+				EA8D990A16DF9A5D006EF8E3 /* Default.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
